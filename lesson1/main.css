@@ -1,0 +1,32 @@
+body{
+    background: bisque;
+}
+
+img{
+    width: 200px;
+}
+
+.Homer{
+    background: silver;
+    color: purple;
+}
+
+.Bart{
+    background: lightskyblue;
+    color: purple;
+}
+
+.Lisa{
+    background: coral;
+    color: purple;
+}
+
+h1{
+    background: greenyellow;
+    color: purple;
+}
+
+a{
+    background: silver;
+    color: purple;
+}
