@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8743821c-8c32-4ce3-ab55-89f6dc7f48ab" name="Changes" comment="Lesson1">
+      <change afterPath="$PROJECT_DIR$/.idea/OktenEducation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson1/img/Bart_Simpson.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson1/img/Homer_Simpson.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson1/img/Lisa_Simpson_official.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson1/img/The_Simpsons_Simpsons_FamilyPicture.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson1/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW1/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW2/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW3/images/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW3/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/HW4/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/HW1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/HW1/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/HW2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/HW2/main.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2G2zvMszjepcSJ5nHAqea6PAiCG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/NikoN/IdeaProjects/OktenEducation",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NikoN\IdeaProjects\OktenEducation\lesson2\HW3\images" />
+      <recent name="C:\Users\NikoN\IdeaProjects\OktenEducation\lesson1\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NikoN\IdeaProjects\OktenEducation\lesson2" />
+      <recent name="C:\Users\NikoN\IdeaProjects\OktenEducation\lesson2\HW1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OktenEducation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OktenEducation" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8743821c-8c32-4ce3-ab55-89f6dc7f48ab" name="Changes" comment="" />
+      <created>1665601695617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665601695617</updated>
+      <workItem from="1665601697209" duration="2562000" />
+      <workItem from="1665744514192" duration="4356000" />
+      <workItem from="1666089430553" duration="11402000" />
+      <workItem from="1666249903834" duration="8412000" />
+      <workItem from="1666279315100" duration="23000" />
+      <workItem from="1666279342056" duration="11000" />
+      <workItem from="1666279355407" duration="120000" />
+      <workItem from="1666279487341" duration="5000" />
+      <workItem from="1666279495369" duration="16000" />
+      <workItem from="1666279628077" duration="12000" />
+      <workItem from="1666279687229" duration="1000" />
+      <workItem from="1666279720038" duration="57000" />
+      <workItem from="1666279830786" duration="43000" />
+      <workItem from="1666279905277" duration="356000" />
+    </task>
+    <task id="LOCAL-00001" summary="Lesson1">
+      <created>1665603947661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665603947661</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
