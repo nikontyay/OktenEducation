@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8743821c-8c32-4ce3-ab55-89f6dc7f48ab" name="Changes" comment="Lesson1">
-      <change afterPath="$PROJECT_DIR$/.idea/OktenEducation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/img/Bart_Simpson.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/img/Homer_Simpson.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/img/Lisa_Simpson_official.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/img/The_Simpsons_Simpsons_FamilyPicture.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW1/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW2/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW3/images/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW3/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/HW4/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/HW1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/HW1/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/HW2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/HW2/main.css" afterDir="false" />
+    <list default="true" id="8743821c-8c32-4ce3-ab55-89f6dc7f48ab" name="Changes" comment="OktenEducation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3/HW2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/HW2/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +90,7 @@
       <workItem from="1666279687229" duration="1000" />
       <workItem from="1666279720038" duration="57000" />
       <workItem from="1666279830786" duration="43000" />
-      <workItem from="1666279905277" duration="356000" />
+      <workItem from="1666279905277" duration="1089000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson1">
       <created>1665603947661</created>
@@ -121,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665603947661</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="OktenEducation">
+      <created>1666280456663</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666280456663</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson1" />
+    <MESSAGE value="OktenEducation" />
+    <option name="LAST_COMMIT_MESSAGE" value="OktenEducation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
