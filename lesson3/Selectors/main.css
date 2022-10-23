@@ -1,0 +1,57 @@
+li {
+   background: cornflowerblue;
+}
+
+.benefits1 {
+    background: #36cd9f;
+}
+
+ul.benefits2 {
+    background: #6a65e2;
+}
+
+#target {
+    background: #36cd9f;
+}
+
+.benefits3 > li {
+    background: #36cd98;
+}
+
+.benefits4 > li {
+    background: #36cd98;
+}
+
+.benefits5, .benefits8 {
+    background: cornflowerblue;
+}
+
+#target2, .benefits9 {
+    background: #36cd9f;
+}
+
+ul li span {
+    background: #36cd9f;
+}
+
+.benefits10 > li + li {
+    background: silver;
+}
+
+a[target="_blank"] {
+    background: yellow;
+}
+
+a[href^="https://owu"] {
+    background: yellow;
+}
+
+a.link:hover {
+    color: aqua;
+}
+
+a.link2:focus {
+    color: crimson;
+}
+
+
