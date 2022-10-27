@@ -1,0 +1,14 @@
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .box2 {
+        flex-direction: column;
+    }
+    .box2 {
+        row-gap: 10px;
+    }
+    .box2-1 {
+        width: 100%;
+    }
+    .box2-2 {
+        width: 100%;
+    }
+}
