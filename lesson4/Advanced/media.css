@@ -1,0 +1,32 @@
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .part2-1-2, .part2-1-3 {
+        display: none;
+    }
+
+    .part2-1-1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .block2-1 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .block2-2 {
+        width: 100%;
+    }
+
+    .box2 {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .block2-3-1 {
+        display: flex;
+    }
+
+    .main-container {
+        background: #ced8e1;
+    }
+}
