@@ -28,8 +28,31 @@ console.log(j);
 let k = 16;
 console.log(k);
 
-let l = 10 > 11;
+let l = true;
 console.log(l);
 
-m = 300 === 300;
+let m = false;
 console.log(m);
+
+
+let firstName = 'Danylo ';
+let middleName = 'Yurievich ';
+let lastName = 'Nikonov';
+let person = firstName + middleName + lastName;
+console.log(person)
+
+let n = 100;
+console.log(typeof (n));
+
+let o = '100';
+console.log(typeof(o));
+
+let p = true;
+console.log(typeof (p));
+
+let firstname = prompt('What is your first name?');
+let lastname = prompt('What is your last name?');
+let age = prompt('What is your age?');
+console.log(firstname + ' ' + lastname + ' ' + age);
+
+
