@@ -52,7 +52,7 @@ console.log(typeof (p));
 
 let firstname = prompt('What is your first name?');
 let lastname = prompt('What is your last name?');
-let age = prompt('What is your age?');
+let age = +prompt('What is your age?');
 console.log(firstname + ' ' + lastname + ' ' + age);
 
 
