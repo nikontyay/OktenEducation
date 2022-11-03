@@ -1,7 +1,16 @@
 // 1- - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
-let container = ['hello', 'okten', 'owu', 0, true, false, 2022, 'something', 'bye', 'why' ];
-console.log (container);
+let container = [];
+container[0] = 'hello';
+container[1] = 'okten';
+container[2] = 'owu';
+container[3] = 0;
+container[4] = true;
+container[5] = false;
+container[6] = 2022;
+container[7] = 'something';
+container[8] = 'bye';
+container[9] = 'why';
 console.log (container[0]);
 console.log (container[1]);
 console.log (container[2]);
@@ -52,6 +61,8 @@ object3.author = [
     {name: 'John Doe', age: 35}
 ];
 console.log(object3);
+
+
 
 // 4 - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
