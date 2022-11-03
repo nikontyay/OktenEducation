@@ -10,7 +10,8 @@ container[5] = false;
 container[6] = 2022;
 container[7] = 'something';
 container[8] = 'bye';
-container[9] = 'why';
+container[container.length] = 'bye'
+console.log(container)
 console.log (container[0]);
 console.log (container[1]);
 console.log (container[2]);
@@ -89,3 +90,45 @@ console.log(users[6].password);
 console.log(users[7].password);
 console.log(users[8].password);
 console.log(users[9].password);
+
+// Practice ----------------------------------------
+
+let array = [
+    [123,22,33],
+    [234],
+    [345]
+]
+console.log(array[1][0]);
+
+let innerArray = array[2];
+console.log(innerArray[0]);
+
+//-----------------------------------------------------
+
+let user1 = {
+    name: 'Danylo',
+    age: 24,
+    skills: ['html', 'css', 'js'],
+    wife: {
+        name: 'Katya',
+        age: '21'
+    }
+}
+console.log(user1);
+console.log(user1.name);
+console.log(user1['age']);
+console.log(user1.skills[2]);
+console.log(user1.wife.name);
+
+//-------------------------------------------------------
+
+let users2 = [
+    {id:1, name:'Petya', age:20, status:true},
+    {id:2, name:'Vasya', age:21, status:false},
+    {id:3, name:'Katya', age:22, status:true},
+    {id:4, name:'Danya', age:24, status:false}
+];
+let user0 = users2[2];
+console.log(users2);
+console.log(users2[3].name);
+console.log(user0.name);
