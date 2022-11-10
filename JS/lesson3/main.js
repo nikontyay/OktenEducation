@@ -36,35 +36,97 @@
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 //
 
-let day = +prompt('Enter the number');
-if (day > 0 && day <=10) {
-    console.log('first')
-}
-else if (day > 10 && day <=20) {
-    console.log('second')
-}
-else if (day > 20 && day <=31) {
-    console.log('third')
-}
-else {
-    console.log('Update the page and try again')
-}
+// let day = +prompt('Enter the number');
+// if (day > 0 && day <=10) {
+//     console.log('first')
+// }
+// else if (day > 10 && day <=20) {
+//     console.log('second')
+// }
+// else if (day > 20 && day <=31) {
+//     console.log('third')
+// }
+// else {
+//     console.log('Update the page and try again')
+// }
 
 
 
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 //
+
+
+// let weeklySchedule = +prompt()
+// switch (weeklySchedule) {
+//     case 1:
+//         console.log('sunday')
+//         break;
+//     case 2:
+//         console.log('monday')
+//         break;
+//     case 3:
+//         console.log('tuesday')
+//         break;
+//     case 4:
+//         console.log('wednesday')
+//         break;
+//     case 5:
+//         console.log('thursday')
+//         break;
+//     case 6:
+//         console.log('friday')
+//         break;
+//     case 7:
+//         console.log('saturdat')
+//         break;
+//     default:
+//         console.log('Enter a number')
+// }
+
 //     - Користувач вводить або має два числа.
 //         Потрібно знайти та вивести максимальне число з тих двох .
 //         Також потрібно врахувати коли введені рівні числа.
 //
+
+// let a = +prompt();
+// let b = +prompt();
+//
+// if (a > b) {
+//     console.log('a is bigger');
+// }
+// else if (b > a) {
+//     console.log('b is bigger');
+// }
+// else if (a === b) {
+//     console.log('equal');
+// }
+// else {
+//     console.log(('error'))
+// }
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
 
+// let x = +prompt() || 'default value';
+// console.log(x)
 
+// or
 
+// let x = 'd';
+// if (!!x === false) {
+//     console.log('default')
+// }
+// else {
+//     console.log('hello')
+// }
 
+// or
 
-
-
-
+// let x = '';
+// if (x) {
+//     console.log('hello')  
+// }
+// else{
+//     console.log('default')   
+// }
+// // If кастується до True
+// // Else кастується до False
