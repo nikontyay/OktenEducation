@@ -95,7 +95,7 @@ console.log(users[9].password);
 
 let array = [
     [123,22,33],
-    [234],
+    [234,345],
     [345]
 ]
 console.log(array[1][0]);
@@ -119,6 +119,7 @@ console.log(user1.name);
 console.log(user1['age']);
 console.log(user1.skills[2]);
 console.log(user1.wife.name);
+console.log(user1.wife.age);
 
 //-------------------------------------------------------
 
@@ -128,6 +129,9 @@ let users2 = [
     {id:3, name:'Katya', age:22, status:true},
     {id:4, name:'Danya', age:24, status:false}
 ];
+
+console.log(users2[0].age)
+
 let user0 = users2[2];
 console.log(users2);
 console.log(users2[3].name);

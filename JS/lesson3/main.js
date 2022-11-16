@@ -106,13 +106,13 @@
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
 
-// let x = +prompt() || 'default value';
+// let x = +prompt() || 'default';
 // console.log(x)
 
 // or
 
-// let x = 'd';
-// if (!!x === false) {
+// let x = '';
+// if (!x === true) {
 //     console.log('default')
 // }
 // else {
@@ -123,7 +123,7 @@
 
 // let x = '';
 // if (x) {
-//     console.log('hello')  
+//     console.log('hello')
 // }
 // else{
 //     console.log('default')   
