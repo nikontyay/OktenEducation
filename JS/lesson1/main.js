@@ -62,5 +62,5 @@ console.log(+users + +admins);
 
 let user = 5;
 console.log(user);
-user += 1+ 2;
+user += 1 + 2;
 console.log(user)

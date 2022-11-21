@@ -111,13 +111,13 @@
 
 // or
 
-// let x = '';
-// if (!x === true) {
-//     console.log('default')
-// }
-// else {
-//     console.log('hello')
-// }
+let x = '';
+if (!x === true) {
+    console.log('default')
+}
+else {
+    console.log('hello')
+}
 
 // or
 
