@@ -1,15 +1,51 @@
 // - Знайти та вивести довижину настипних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
+// let str1 = 'hello world';
+// let str2 = 'lorem ipsum';
+// let str3 = 'javascript is cool';
+// console.log(str1.length);
+// console.log(str2.length);
+// console.log(str3.length);
+
+
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
+// let str1 = 'hello world';
+// let str2 = 'lorem ipsum';
+// let str3 = 'javascript is cool';
+//
+// console.log(str1.toUpperCase())
+// console.log(str2.toUpperCase());
+// console.log(str3.toUpperCase());
+
+
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
+// let str1 = 'HELLO WORLD';
+// let str2 = 'LOREM IPSUM';
+// let str3 = 'JAVASCRIPT IS COOL';
+//
+// console.log(str1.toLowerCase());
+// console.log(str2.toLowerCase());
+// console.log(str3.toLowerCase());
+
+
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
-//
-//
+// let str = ' dirty string   ';
+// console.log(str.trim());
+// console.log(str.length);
+
+
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
-//     let str = 'Ревуть воли як ясла повні';
+    
 // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+// console.log(str.split(' '))
+let string = 'Ревуть воли як ясла повні';
+function stringToarray (str) {
+    return str.split(' ');
+}
+
+console.log(stringToarray(string));
 
 
 // let str = 'hello okten !!!';
