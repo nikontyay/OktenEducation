@@ -1,22 +1,20 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-
 // function squareAB (a,b) {
 //     let result = a * b;
 //     return result
 // }
-
 // let x = squareAB(10,20);
 // console.log(x)
-// - створити функцію яка обчислює та повертає площу кола з радіусом r
 
+// - створити функцію яка обчислює та повертає площу кола з радіусом r
 // function squareCircle (r) {
 //     return 3.14 * r**2;
 // }
 //
 // let x = squareCircle(10);
 // console.log(x);
-// - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
+// - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 // function squareCylinder (r,h) {
 //     return 2 * 3.14 * r * h;
 // }
@@ -47,7 +45,6 @@
 // }
 // userFilter(users);
 
-
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 // function paragraph (text) {
 //     document.write(`<p>${text}</p>`);
@@ -77,29 +74,67 @@
 //
 // list('Hello', 10)
 
-
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-let array = [10, 'hello', true];
+// let array = [10, 'hello', true];
+//
+// function list (arr) {
+//     document.write(`<ul>`);
+//     for (const arrayElement of array) {
+//         document.write(`<li>${arrayElement}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+// list(array)
 
-function list (array) {
-    document.write(`<ul>`);
-    for (const arrayElement of array) {
-        document.write(`<li>${arrayElement}</li>`)
-    }
-    document.write(`</ul>`)
-}
-list(array)
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+// let arr = [
+//     {id: 1, name: 'Lisa Simpson', age: 11},
+//     {id: 2, name: 'Homer Simpson', age: 41},
+//     {id: 3, name: 'Bart Simpson', age: 12},
+// ]
+//
+// function object (array) {
+//     for (const arrayElement of array) {
+//         document.write(`<div>${arrayElement.id} ${arrayElement.name} ${arrayElement.age}</div>`)
+//     }
+// }
+// object(arr)
+
 // - створити функцію яка повертає найменьше число з масиву
+// let arr = [17, -2, -3, 5, 17];
+// function minvalue (array) {
+//
+//     let min = array[0];
+//     for (const item of array) {
+//         if (item < min) {
+//             min = item;
+//         }
+//     }
+//     return min;
+//
+// }
+//
+// console.log(minvalue(arr));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+// let arr = [10,20,30,40,50];
+// function someThing (array) {
+//     let sum = 0
+//     for (const item of array) {
+//          sum = sum + item;
+//     }
+//     return sum;
+// }
+//
+// console.log(someThing(arr));
+
 
 // function calc (a,b) {
-// //   let c = a + b;
-// //   console.log(c);
-// // }
-// //
-// // calc(10,20);
+//   let c = a + b;
+//   console.log(c);
+// }
+//
+// calc(10,20);
 
 // function calc (a,b) {
 //   return c = a + b;
