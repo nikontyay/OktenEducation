@@ -44,15 +44,32 @@
 // function stringToarray (str) {
 //     return str.split(' ');
 // }
-//
+// //
 // console.log(stringToarray(string));
 
 
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+// let nums = [10,8,-7,55,987,-1011,0,1050,0];
+
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
+let nums = [11,21,3];
+
+let sortNums1 = nums.sort((a,b) =>{
+    return a - b;
+})
+console.log(sortNums1);
+
+let sortNums2 = nums.sort ((a,b) => {
+    return b - a;
+})
+console.log(sortNums2)
+
+
+
+
 //
 //
 // - є масив
