@@ -55,17 +55,18 @@
 //     let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
-let nums = [11,21,3];
 
-let sortNums1 = nums.sort((a,b) =>{
-    return a - b;
-})
-console.log(sortNums1);
-
-let sortNums2 = nums.sort ((a,b) => {
-    return b - a;
-})
-console.log(sortNums2)
+// let nums = [11,21,3];
+//
+// let sortNums1 = nums.sort((a,b) =>{
+//     return a - b;
+// })
+// console.log(sortNums1);
+//
+// let sortNums2 = nums.sort ((a,b) => {
+//     return b - a;
+// })
+// console.log(sortNums2)
 
 
 
@@ -73,17 +74,34 @@ console.log(sortNums2)
 //
 //
 // - є масив
-// let coursesAndDurationArray = [
-//     {title: 'JavaScript Complex', monthDuration: 5},
-//     {title: 'Java Complex', monthDuration: 6},
-//     {title: 'Python Complex', monthDuration: 6},
-//     {title: 'QA Complex', monthDuration: 4},
-//     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
-// ];
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
 // -- відсортувати його за спаданням за monthDuration
+
+let sorted = coursesAndDurationArray.sort((a,b) => {
+   return  b.monthDuration - a.monthDuration;
+})
+// console.log(sorted);
+
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
-//
+// One Way
+// let filtered = coursesAndDurationArray.filter(function (value){
+//     return value.monthDuration > 5;
+// })
+// console.log(filtered)
+
+// Second Way
+let filtered = coursesAndDurationArray.filter((value) =>{
+    return value.monthDuration > 5;
+})
+console.log(filtered);
+
 // описати колоду карт
 // - знайти піковий туз
 // - всі шістки
