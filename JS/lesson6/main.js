@@ -40,12 +40,86 @@
     
 // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
 // console.log(str.split(' '))
-let string = 'Ревуть воли як ясла повні';
-function stringToarray (str) {
-    return str.split(' ');
-}
+// let string = 'Ревуть воли як ясла повні';
+// function stringToarray (str) {
+//     return str.split(' ');
+// }
+//
+// console.log(stringToarray(string));
 
-console.log(stringToarray(string));
+
+// - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+//     let nums = [11,21,3];
+// sortNums(nums,'ascending') // [3,11,21]
+// sortNums(nums,'descending') // [21,11,3]
+//
+//
+// - є масив
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// -- відсортувати його за спаданням за monthDuration
+// -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+//
+// описати колоду карт
+// - знайти піковий туз
+// - всі шістки
+// - всі червоні карти
+// - всі буби
+// - всі трефи від 9 та більше
+//
+//
+// {
+//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+//         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+//     color:'', // 'red','black'
+// }
+//
+//
+// Додатково по reduce
+// Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
+// {
+//     spades:[],
+//         diamonds:[],
+//     hearts:[],
+//     clubs:[]
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // let str = 'hello okten !!!';
@@ -148,11 +222,13 @@ console.log(stringToarray(string));
 
 
 // Метод join() объединяет все элементы массива (или массивоподобного объекта) в строку.
-// let join = arr.join(';');
+// const concat = ['ant', 'bison', 'camel', 'duck', 'bison'];
+// let join = concat.join(';');
 // console.log(join);
 
 // let nums = [11, 22, 33];
-// let concat = arr.concat(nums);
+// let some = concat.concat('sda');
+// console.log(concat.concat('???'));
 // console.log(concat)
 
 
@@ -161,19 +237,22 @@ console.log(stringToarray(string));
 
 
 // Метод slice() возвращает новый массив, содержащий копию части исходного массива (диапазон от до невключительно)
-// let slice = concat.slice(0, 4);
-// console.log(slice);
+
+// // let slice = concat.slice(0,2);
+// // console.log(slice);
 // console.log(concat);
 
 
 // Метод splice() изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые.
-// let splice = concat.splice(0, 2, '!!!', '#$%^', '*&&^%$65');
+// let splice = concat.splice(0, 1, '!!!');
 // console.log(splice);
-// console.log(concat);
-// concat.splice(concat.indexOf(11), 1);
+// console.log(concat.splice(0,2,'???'));
 // console.log(concat)
-//
+// // concat.splice(concat.indexOf('o'), 0);
+// // console.log(concat)
+// //
+// console.log(concat.indexOf('ant'));
 //
 // // Метод includes() определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.
-// console.log(concat.includes(11));
+// console.log(concat.includes('ant'));
 // console.log('hello okten'.includes('ok'));
