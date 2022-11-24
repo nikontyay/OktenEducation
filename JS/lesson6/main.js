@@ -154,55 +154,55 @@ console.log(deck);
 
 // описати колоду карт
 // - знайти піковий туз
-let filtered = deck.filter(function (value){
-    return value.cardSuit === 'spade' && value.name === 'ace'
-})
-console.log(filtered)
+// let filtered = deck.filter(function (value){
+//     return value.cardSuit === 'spade' && value.name === 'ace'
+// })
+// console.log(filtered)
 // - всі шістки
+// let filtered = deck.filter(function (value){
+//     return  value.name === 6
+// });
+// console.log(filtered)
 // - всі червоні карти
+// let filtered = deck.filter(function (value){
+//     return value.color === 'red'
+// });
+// console.log(filtered);
 // - всі буби
+// let filtered = deck.filter(function (value){
+//     return value.cardSuit === 'diamond'
+// });
+// console.log(filtered);
 // - всі трефи від 9 та більше
+// let filtered = deck.filter(function (value) {
+//     return value.cardSuit === 'clubs' && value.name >= 9 || value.cardSuit === 'clubs' && typeof value.name === 'string'
+// })
+// console.log(filtered);
 
 
 //
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
-// {
-//     spades:[],
-//         diamonds:[],
-//     hearts:[],
-//     clubs:[]
-// }
 
 
+let reduceArr = deck.reduce((accum, value) => {
+    if (value.cardSuit === 'spade') {
+        accum.spades.push(value);}
+        else if (value.cardSuit === 'clubs') {
+            accum.clubs.push(value);}
+        else if (value.cardSuit === 'diamond') {
+                accum.diamonds.push(value);}
+    else if (value.cardSuit === 'heart') {
+        accum.hearts.push(value);}
+    return accum;
+    },{
+    spades:[],
+    diamonds:[],
+    hearts:[],
+    clubs:[]
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(reduceArr);
 
 
 // let str = 'hello okten !!!';
