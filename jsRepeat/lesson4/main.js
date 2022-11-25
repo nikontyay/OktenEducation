@@ -144,3 +144,12 @@
 //         console.log(user);
 //     }
 // }
+
+let object = {
+	name: 'Danylo Nikonov',
+	age: 21
+}
+
+for (const key in object ) {
+	console.log(object[key])
+}
