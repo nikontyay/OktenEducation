@@ -228,7 +228,7 @@ console.log(reduceArr);
 // console.log(str.endsWith('en'));
 
 
-// substring повертає підстрічку стрічки між двума індексами
+// substring повертає підстрічку стрічки між двума індексами (НЕВКЛЮЧНО)
 // console.log(str.substring(0, 7));
 
 
@@ -246,7 +246,7 @@ console.log(reduceArr);
 // console.log(str.indexOf('o', 5));
 
 
-// Метод charAt() возвращает указанный символ из строки
+// Метод charAt() возвращает указанный символ из строки (указуем по индексу)
 // console.log(str.charAt(8));
 
 
