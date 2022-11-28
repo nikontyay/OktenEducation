@@ -85,12 +85,13 @@
 // console.log(newStr.length);
 
 let users = [
-    {id:1, name:'Petya', age:20, status:true},
-    {id:2, name:'Vasya', age:21, status:false},
-    {id:3, name:'Katya', age:22, status:true},
-    {id:4, name:'Danya', age:24, status:false}
+    {id:1, name:'Petya', age:25, status:true},
+    {id:2, name:'Vasya', age:29, status:false},
+    {id:3, name:'Katya', age:23, status:true},
+    {id:4, name:'Danya', age:27, status:false}
 ];
 
+//ForEach
 // function whatiWantToDo (item) {
 //     console.log(item);
 // }
@@ -109,6 +110,7 @@ let users = [
 // }
 // someThing(users);
 
+// Filter
 // let filteredUsers = users.filter(function (user){
 //     return user.age > 20;
 // })
@@ -116,7 +118,7 @@ let users = [
 //
 //or
 //
-// let filteredUsers = users.filter((user) => user.age > 20);
+// let filteredUsers = users.filter((user) => user.age > 20 && user.status === false);
 // console.log(filteredUsers);
 //
 //or
@@ -132,6 +134,43 @@ let users = [
 // filter(users);
 // console.log(arr);
 
+// Map - змінити старий тип данних на новий тип данних
+// let mapUser = users.map(function (user) {
+//     let newUser = {name: user.name, age: user.age};
+//     return newUser;
+// })
+// console.log(mapUser);
+//
+//or
+//
+// let mapUser = users.map((user,index) => ({id: index+1, name: user.name, age: user.age}));
+// console.log(mapUser);
+
+// Sort
+// let sortedUsers = users.sort((a,b) => b.age - a.age);
+// console.log(sortedUsers);
+//
+// let sortedUsers = users.sort(function (a,b){
+//     if (a.name < b.name) {
+//         return -1;
+//     }
+//     if (a.name > b.name) {
+//         return 1;
+//     }
+//     if (a.name === b.name) {
+//         return 0;
+//     }
+// })
+// console.log(sortedUsers);
+
+// Reduce
+// let reducedUsers = users.reduce((accumulator,user) => {
+//     accumulator.names.push(user.name);
+//     accumulator.ages.push(user.age);
+//     accumulator.statuses.push(user.status);
+//     return accumulator
+// }, {names: [], ages:[], statuses:[]});
+// console.log(reducedUsers);
 
 // - Знайти та вивести довижину настипних стрінгових значень
 //     'hello world', 'lorem ipsum', 'javascript is cool'
