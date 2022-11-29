@@ -327,3 +327,19 @@ console.log(filtered);
 //     hearts:[],
 //     clubs:[]
 // }
+// let reducedItems = deck.reduce((accumulator, card) => {
+//     if (card.cardSuit === 'spade') {
+//         accumulator.spades.push(card)
+//     }
+//     if (card.cardSuit === 'diamond') {
+//         accumulator.diamonds.push(card)
+//     }
+//     if (card.cardSuit === 'heart') {
+//         accumulator.hearts.push(card)
+//     }
+//     if (card.cardSuit === 'clubs') {
+//         accumulator.clubs.push(card)
+//     }
+//     return accumulator
+// },{spades: [], diamonds: [], hearts: [], clubs: [] })
+// console.log(reducedItems);
