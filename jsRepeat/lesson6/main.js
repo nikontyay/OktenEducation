@@ -266,11 +266,48 @@
 // console.log(filtered);
 
 //  описати колоду карт
+let cardSuits = [
+    {cardSuit: 'heart', color: 'red'},
+    {cardSuit: 'diamond', color: 'red'},
+    {cardSuit: 'spade', color: 'black'},
+    {cardSuit: 'clubs', color: 'black'},
+];
+let value = [6,7,8,9,10,'jack','queen','king','ace', 'joker'];
+let deck = [];
+
+for (const suit of cardSuits) {
+    for (const num of value) {
+        const card = {
+            cardSuit: suit.cardSuit,
+            color: suit.color,
+            value: num}
+        deck.push(card)
+    }}
+
+console.log(deck);
+
 //  - знайти піковий туз
+let spadeAce = deck.filter((x) => x.cardSuit === 'spade' && x.value === 'ace');
+console.log(spadeAce);
 //  - всі шістки
+let allSix = deck.filter((item) => item.value === 6);
+console.log(allSix);
 //  - всі червоні карти
+let allRed = deck.filter((item) => item.color === 'red');
+console.log(allRed);
 //  - всі буби
+let allDiamond = deck.filter((item) => item.cardSuit === 'diamond');
+console.log(allDiamond);
 //  - всі трефи від 9 та більше
+let filtered = deck.filter((item) => {
+    if (item.cardSuit === 'clubs' && item.value >= 9) {
+        return item}
+     if (item.cardSuit === 'clubs' &&  typeof item.value === "string"  ) {
+        return  item;
+    }    
+
+})
+console.log(filtered);
 // 
 // 
 // {
@@ -280,6 +317,8 @@
 // }
 // 
 // 
+
+
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 // {
