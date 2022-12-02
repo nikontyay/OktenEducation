@@ -174,23 +174,67 @@
 //     document.write(`<div>${i}</div>`);
 // }
 
-///NOT DONE/ стоврити масив книжок (назва, кількість сторінок, автори , жанри).
-// let arr = [
+// стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+// let books = [
 //     {
 //         name: 'Hobbit',
 //         pages: 300,
-//         author: 'Tolkin',
-//         genre: 'fantastic'
+//         author: ['Tolkin'],
+//         genre: ['fantastic']
 //     },
 //     {
 //         name: 'Lord of ring',
 //         pages: 400,
 //         author: ['Tolkin', 'Someauthor'],
 //         genre: ['fantastic','fantasy'] 
+//     },
+//     {
+//         name: 'Lord of ring Part 2',
+//         pages: 500,
+//         author: ['Tolkin', 'Someauthor'],
+//         genre: ['fantastic','fantasy', 'fantasy']
 //     }
 // ]
 // -знайти наібльшу книжку.
+// let count = books[0];
+// for (const book of books) {
+//     if (book.pages > count.pages) {
+//         count = book;
+//     }
+// }
+// console.log(count);
+
 // - знайти книжку/ки з найбільшою кількістю жанрів
+// let count = books[0];
+// for (const book of books) {
+//     if (book.genre.length > count.genre.length) {
+//         count = book;
+//     }
+// }
+// console.log(count);
+
 // - знайти книжку/ки з найдовшою назвою
+// let count = books[0];
+// for (const book of books) {
+//     if (book.name.length > count.name.length) {
+//         count = book;
+//     }
+// }
+// console.log(count);
+
 // - знайти книжку/ки які писали 2 автори
+// for (const book of books) {
+//     if (book.author.length === 2){
+//         console.log(book)
+//     }
+// }
+
 // - знайти книжку/ки які писав 1 автор
+// let count = books[0];
+// for (const book of books) {
+//     if (book.author.length === 1){
+//         count = book;
+//     }
+// }
+// console.log(count);
+// console.log(typeof count);
