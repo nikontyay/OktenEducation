@@ -19,12 +19,12 @@
 
 // console.log(str.charAt(7));
 
-// let phone = '(067)123-12-12';
-// // let resultOfReplace = phone
-// //     .replaceAll('(','')
-// //     .replaceAll(')','')
-// //     .replaceAll('-','');
-// // console.log(resultOfReplace);
+let phone = '(067)123-12-12';
+let resultOfReplace = phone
+    .replaceAll('(','')
+    .replaceAll(')','')
+    .replaceAll('-','');
+console.log(resultOfReplace);
 // // console.log(phone.replaceAll(/[()-]/g, ''));
 
 // let obj = 'name: Vasya age:31';
