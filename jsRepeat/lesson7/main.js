@@ -134,7 +134,6 @@
 // console.log(userCopy === user); //false
 // console.log(userCopy.skills === user.skills); //true
 
-
 // Deep copy via JSON - робить повну копію, але видаляє функції
 // let user = {name: 'kokos', age: 31, wife: {name: 'anna', age: 32}, skills: ['html', 'js']};
 //
