@@ -66,7 +66,7 @@
 // let sortedClients = clients.sort((a,b) => a.order - b.order);
 // console.log(sortedClients);
 
-// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+//Як вивести ключ info// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 //     -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 //     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
@@ -108,7 +108,7 @@
 // car.addDriver('John');
 // car.info()
 
-// - (Те саме, тільки через клас)
+//NOT DONE// - (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
@@ -117,52 +117,49 @@
 //     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 //
 //
-//
+
 // -створити клас/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
-class Popelushka {
-
-    constructor(name, age, size) {
-        this.name = name;
-        this.age = age;
-        this.size = size;
-    }
-}
-
-let girl1 = new Popelushka('girl1', 18,34);
-let girl2 = new Popelushka('girl2', 19,35);
-let girl3 = new Popelushka('girl3', 20,36);
-let girl4 = new Popelushka('girl4', 21,37);
-let girl5 = new Popelushka('girl5', 22,38);
-let girl6 = new Popelushka('girl6', 23,34);
-let girl7 = new Popelushka('girl7', 24,35);
-let girl8 = new Popelushka('girl8', 25,36);
-let girl9 = new Popelushka('girl9', 26,37);
-let girl10 = new Popelushka('girl10', '27','38');
-
-let girls = [girl1,girl2,girl3,girl4,girl5,girl6,girl7,girl8,girl9,girl10]
+// class Popelushka {
+//
+//     constructor(name, age, size) {
+//         this.name = name;
+//         this.age = age;
+//         this.size = size;
+//     }
+// }
+//
+// let girl1 = new Popelushka('girl1', 18,34);
+// let girl2 = new Popelushka('girl2', 19,35);
+// let girl3 = new Popelushka('girl3', 20,36);
+// let girl4 = new Popelushka('girl4', 21,37);
+// let girl5 = new Popelushka('girl5', 22,38);
+// let girl6 = new Popelushka('girl6', 23,34);
+// let girl7 = new Popelushka('girl7', 24,35);
+// let girl8 = new Popelushka('girl8', 25,36);
+// let girl9 = new Popelushka('girl9', 26,37);
+// let girl10 = new Popelushka('girl10', '27','38');
+//
+// let girls = [girl1,girl2,girl3,girl4,girl5,girl6,girl7,girl8,girl9,girl10]
 
 // Створити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-class Prince extends Popelushka {
-    constructor(name,age,size) {
-        super(name,age,size );
-    }
-}
-let prince = new Prince('prince1',19,34);
+// class Prince extends Popelushka {
+//     constructor(name,age,size) {
+//         super(name,age,size );
+//     }
+// }
+// let prince = new Prince('prince1',19,34);
 
 // За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-let findGirls = function (arr,ourPrince) {
-    for (const item of arr) {
-        if (item.size === ourPrince.size) {
-            console.log(`My princess is ${item.name}`)
-        }    
-    }
-}
-findGirls(girls,prince)
+// let findGirls = function (arr,ourPrince) {
+//     for (const item of arr) {
+//         if (item.size === ourPrince.size) {
+//             console.log(`My princess is ${item.name}`)
+//         }    
+//     }
+// }
+// findGirls(girls,prince)
 
-
-
-
-// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+//NOT DONE// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
 
 
