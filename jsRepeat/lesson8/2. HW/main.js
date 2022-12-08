@@ -108,15 +108,49 @@
 // car.addDriver('John');
 // car.info()
 
-//NOT DONE// - (Те саме, тільки через клас)
+//Як вивести ключ info// - (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 //     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 //     -- changeYear (newValue) - змінює рік випуску на значення newValue
 //     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+// class Cars {
+//     constructor(model, manufactor, year, maxspeed, volumeOfEngine) {
+//         this.model = model;
+//         this.manufactor = manufactor;
+//         this.year = year;
+//         this.maxspeed = maxspeed;
+//         this.volumeOfEngine = volumeOfEngine;
+//     }
+//     drive () {
+//         console.log(`їдемо зі швидкістю ${this.maxspeed} на годину`) 
+//     };
+//     info () {
+//         console.log(`model: ${this.model}, manufactor: ${this.manufactor}, year: ${this.year}, maxspeed: ${this.maxspeed}, volumeofengine: ${this.volumeOfEngine}`)
+//     }
+//     increaseMaxSpeed (newSpeed) {
+//         return this.maxspeed = newSpeed
+//     }
+//     changeYear (newYear) {
+//         return this.year = newYear
+//     }
+//     addDriver (driverName) {
+//         this.driver = driverName
+//     }
+// }
 //
-//
+// let car = new Cars('Toyota', 'Japan',2015,160,1.6);
+// console.log(car);
+// car.drive();
+// car.info();
+// car.increaseMaxSpeed(200);
+// console.log(car);
+// car.info();
+// car.changeYear(2020);
+// car.info();
+// car.addDriver('Kokos');
+// console.log(car);
 
 // -створити клас/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 // class Popelushka {
@@ -159,7 +193,9 @@
 // }
 // findGirls(girls,prince)
 
-//NOT DONE// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+// let filtered = girls.find(item => item.size = 34);
+// console.log(filtered);
 
 
 
