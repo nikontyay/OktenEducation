@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--action - зазвичай куди ми відправляємо дані з форми-->
+<form action="" name="f1">
+  <input type="text" placeholder="username" name="userName">
+  <button>send username</button>
+</form>
+
+<form action="" name="f2">
+  <input type="email" placeholder="email" name="userEmail">
+  <button>send email</button>
+</form>
+
+<script>
+  // повертає форму (в цьому випадку конкертний input)
+  console.log(document.forms['f1']['userName']);
+
+</script>
+</body>
+</html>
