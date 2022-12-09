@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OKTEN</title>
+</head>
+<body>
+    <h1>DOM title</h1>
+
+    <ul class="menu" id="list-1">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <ul class="menu" id="list-2">
+        <li>item 21</li>
+        <li>item 22</li>
+        <li>item 23</li>
+        <li>item 24</li>
+        <li>item 25</li>
+    </ul>
+
+<script>
+
+    // DOM - document object model - це звичайний об'єкт, який повертає html-колекцію,
+    // html колекція це псевдо-масив, поводить себе як масив (ітерується), але не має функцій як у масива
+    // console.log(document)
+    // console.log(document.head);
+    // console.log(document.head.children); // побачимо його прямих нащадків у вигляді псевдо-массива
+    // console.log(document.body);
+    // console.log(document.body.innerHTML); // побачимо внутрішній текст всередині body
+
+    // ID - пошук по ID, якщо буде 2 однакових ID - знайде тільки перший. Шукати потрібно від 'document', через body
+    // не працює
+    // let ul1 = document.getElementById('list-1');
+    // console.log(ul1);
+
+    // Class - пошук по класу.
+    // Якщо у нас буде 1 ul, а не 2, то всеодно результат буде псевдомасив, тому краще шукати за індексами або через ітерацію
+    // let menuCollection = document.getElementsByClassName('menu');
+    // console.log(menuCollection);
+    // // ітерація
+    // for (const menuCollectionElement of menuCollection) {
+    //     console.log(menuCollectionElement)
+    // }
+
+    // TAG - пошук по тегу
+    // let ulList = document.getElementsByTagName('ul');
+    // console.log(ulList);
+    // let liList = document.getElementsByTagName('li'); // знайде всі лішки
+    // console.log(liList);
+
+    // Пошук конкретних лішок по ID та Тегу
+    // let list1 = document.getElementById('list-1');
+    // console.log(list1);
+    // list1LiCollection = list1.getElementsByTagName('li');
+    // console.log(list1LiCollection);
+
+    // querySelector - querySelectorAll
+    // console.log(document.querySelector('ul'));
+    // console.log(document.querySelector('body .menu'))// знаходить тільки один css-селектор
+    // console.log(document.querySelectorAll('ul'));// знаходить всі css-селектори та повертає список ВУЗЛІВ, а не html-колекцію
+    // console.log(document.querySelectorAll('.menu'));
+    //
+    // console.log(document.querySelectorAll('.menu:nth-child(3)')); // знайти другий list
+    // let nodeListOf = document.querySelectorAll('#list-2 > li');
+    // for (const nodeListOfElement of nodeListOf) {
+    //     console.log(nodeListOfElement)
+    // }
+
+
+
+</script>
+
+</body>
+</html>
