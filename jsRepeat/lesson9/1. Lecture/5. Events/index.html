@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> .target {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+
+<div class="target"></div>
+
+<form action="" name="f1">
+  <input type="text" name="login" placeholder="login">
+  <button>send</button>
+</form>
+
+<script>
+
+  let target = document.querySelector('.target');
+
+  // .onclick - визначає скільки разів клікнули на елемент. 'e' - свідок події
+  // target.onclick = function (e) {
+  //   console.log(e)
+  // }
+  // target.onclick = function () {
+  //   console.log('.')
+  // }
+
+  // .onmouseover - визначає скільки разів навели на елемент. 'e' - свідок події
+  // target.onmouseover = function (e) {
+  //   console.log(e)
+  // }
+
+  // .onmousemove - скільки разів я поводив по елементу
+  // target.onmousemove = function (e) {
+  //   console.log(e.clientX)
+  // }
+
+  // наповнюємо div з інпуту динамічно
+  // document.forms['f1']['login'].oninput = function () {
+  //   console.log(this.value)
+  //   target.innerText = this.value;
+  // }
+
+  // .oninput дозволить считати яку інформацію ми вводимо в input
+  // document.forms['f1']['login'].oninput = function () {
+  //   let value = this.value;
+  //   console.log(value);
+  //   if (value.includes('ass')) {
+  //     alert('!!!!!');
+  //   }
+  // }
+
+  //.onsubmit - відбувається подія onsubmit, коли ми відправляємо інформацію з форми. Нажимаємо на кнопку - відбуваєтсья подія onsubmit і сторінка перезавантажиться.
+  // .preventDefault - забороняє дефолтну подію функції (в onsubmit це оновлення).
+  // let f1 = document.forms['f1'];
+  // f1['login'].oninput = function (e) {
+  //   let value = this.value;
+  //   console.log(value);
+  //   if (value.includes('ass')) {
+  //     alert('!!!!!');
+  //   }
+  // }
+  //
+  // f1.onsubmit = function (e) {
+  //     e.preventDefault();
+  //     console.log(this.login.value);
+  // }
+
+  // addEventListener - можна додати декілька подій addEventListener('подія', function (e){}).
+  // Події 'submit' та інші можна подивитися в input прописавши префікс 'on'. в addEventListener задаємо без 'on'.
+  let f1 = document.forms['f1'];
+  f1.addEventListener('submit', function (e) {
+      e.preventDefault ();
+      console.log('.');
+  })
+
+  f1.addEventListener('submit', function (e) {
+      e.preventDefault ();
+      console.log(',');
+  })
+
+</script>
+
+</body>
+</html>
