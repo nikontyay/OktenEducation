@@ -9,49 +9,91 @@
 </head>
 <body>
 
-<div id="target">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, assumenda consectetur dolor doloribus eum
-    eveniet expedita iste labore molestiae provident qui quibusdam quidem quos ratione vel veritatis vero vitae?
+<h1>before</h1>
+
+<div id="target" class="point">
+    <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Ab adipisci, assumenda consectetur dolor doloribus eum
+    <span>eveniet expedita</span> iste labore molestiae provident qui quibusdam quidem quos ratione vel veritatis vero vitae?
 </div>
 
+<div class="point">
+    <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Ab adipisci, assumenda consectetur dolor doloribus eum
+    <span>eveniet expedita</span> iste labore molestiae provident qui quibusdam quidem quos ratione vel veritatis vero vitae?
+</div>
+
+<div class="point">
+    <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Ab adipisci, assumenda consectetur dolor doloribus eum
+    <span>eveniet expedita</span> iste labore molestiae provident qui quibusdam quidem quos ratione vel veritatis vero vitae?
+</div>
+
+<h2>after</h2>
 <script>
 
     let target = document.getElementById('target');
 
-    //знайду внутрішній текст в цьому елементі
+    //innerText - знайде внутрішній текст в цьому елементі
     // console.log(target.innerText);
 
-    // замінити внутрішній текст
+    // innerText - замінити внутрішній текст
     // target.innerText = 'Okten';
     // console.log(target.innerText);
 
     // робить інлайн стилі, перебити потім складно
     // target.style.background = 'silver'
 
-    // повертає список всіх класів цього елементу
+    // classList - повертає список всіх класів цього елементу
     // console.log(target.classList);
 
-    // додає клас
+    // classList.add - додає клас
     // target.classList.add('bar');
 
-    // достати клас за певним індексом
+    // classList.item - достати клас за певним індексом
     // console.log(target.classList.item(0));
 
-    // повертає чи існує такий клас чи ні
+    // classList.contains - повертає чи існує такий клас чи ні
     // console.log(target.classList.contains('bar'));
 
-    // якщо такий клас існує - його видалить, якщо його немає - то його додасть
+    // toggle - якщо такий клас існує - його видалить, якщо його немає - то його додасть
     // target.classList.toggle('bar');
     // target.classList.toggle('asd'); // додасть клас, бо його не було
 
-    // дістати інформацію по атрибуту ID
+    // getAttribute - дістати інформацію по атрибуту ID
     // console.log(target.getAttribute('id'));
 
-    // дістати інформацію по атрибуту CLASS
+    // getAttribute - дістати інформацію по атрибуту CLASS
     // console.log(target.getAttribute('class'))
 
-    // замінить назву атрибуту
+    // setAttribute - замінить назву атрибуту
     // target.setAttribute('id', 'target1')
+
+    // previousElementSibling - знайдить елемент до того з яким працюємо
+    // console.log(target.previousElementSibling);
+
+    // nextElementSibling - знайдить наступний елемент з яким працюємо
+    // console.log(target.nextElementSibling);
+
+    //children - покаже всі дочірні елементи - повертає HTML об'єкти
+    // console.log(target.children);
+
+    // childNodes - покаже всі дочірні елементи - повертає Nodes - вузли
+    // console.log(target.childNodes);
+
+    // innerText - замінить внутрішній текст та сприйме його як текст
+    // target.innerText = '<b>Sometext</b>'
+
+    // innerHTML - замінить внутрішній текст та сприйме його як HTML теги
+    // target.innerHTML = '<b>Sometext</b>'
+
+    // outerHTML - можна подивитись як сам об'єкт виглядає ззовні, його обгортка
+    // console.log(target.outerHTML);
+
+    //Ітерація
+    // let collectionOfDiv = document.getElementsByClassName('point');
+    // for (const divElement of collectionOfDiv) {
+    //     divElement.innerText = 'Sometext'
+    //     divElement.classList.add('asd')
+    // }
+
 
 
 </script>
