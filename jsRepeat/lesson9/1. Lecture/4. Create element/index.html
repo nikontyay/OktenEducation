@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .user {
+            background: #36cd98;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!--<div class="users"></div>-->
+
+<!--<ul class="users2"></ul>-->
+<script>
+
+  //createElement - створює елемент, але одразу не додає його в структуру
+  // let h2 = document.createElement('h2')
+  // h2.innerText = 'Sometext'
+
+  //appendChild - додає в структуру один елемент; append - додає n-кількість елементів в структуру
+  // document.body.appendChild(h2)
+
+  // Створення Div з циклом
+  // let allUsersDiv = document.getElementsByClassName('users')[0] //завдяки індексу беремо перший div з класом 'users'
+  //
+  // let users = [
+  //     {name: 'Anna', age:21, status:true},
+  //     {name: 'Kokos', age:23, status:false},
+  //     {name: 'Vasya', age:25, status:true}
+  // ]; // [{name: string, name: number, status: boolean}]
+  // for (const user of users) {
+  //     let div = document.createElement('div');
+  //     div.classList.add('user');
+  //     div.innerText = user.name;
+  //     allUsersDiv.appendChild(div)
+  //
+  // }
+
+  // Створення Li з циклом
+  // let allUsersLi = document.getElementsByClassName('users2')[0] //завдяки індексу беремо перший div з класом 'users'
+  //
+  // let users2 = [
+  //     {name: 'Anna', age:21, status:true},
+  //     {name: 'Kokos', age:23, status:false},
+  //     {name: 'Vasya', age:25, status:true}
+  // ]; // [{name: string, name: number, status: boolean}]
+  // for (const user of users2) {
+  //     let li = document.createElement('li');
+  //     li.classList.add('user');
+  //     li.innerText = user.name;
+  //     allUsersLi.appendChild(li)
+  //
+  // }
+
+  // добавляєм div інформацією
+//   let users = [
+//       {name: 'Anna', age:21, status:true},
+//       {name: 'Kokos', age:23, status:false},
+//       {name: 'Vasya', age:25, status:true}
+// ];
+//
+//   for (const user of users) {
+//       let userInfoDiv = document.createElement('div');
+//       let h2 = document.createElement('h2');
+//       h2.innerText = user.name
+//       let p = document.createElement('p');
+//       p.innerText = user.status + ' ' + user.age
+//       document.body.appendChild(userInfoDiv);
+//       userInfoDiv.append(h2,p)
+//   }
+  
+</script>
+
+</body>
+</html>
