@@ -7,26 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .mainDiv {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #36cd98;
-            border: 2px solid black;
-            gap: 20px;
-            height: 500px;
-        }
-        .blockDiv {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 1px solid black;
-            box-sizing: border-box;
-            width: 150px;
-        }
-        ul {
-            padding: 20px;
-        }
+        /*.mainDiv {*/
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*    background: #36cd98;*/
+        /*    border: 2px solid black;*/
+        /*    gap: 20px;*/
+        /*    height: 500px;*/
+        /*}*/
+        /*.blockDiv {*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    justify-content: center;*/
+        /*    border: 1px solid black;*/
+        /*    box-sizing: border-box;*/
+        /*    width: 150px;*/
+        /*}*/
+        /*ul {*/
+        /*    padding: 20px;*/
+        /*}*/
 
 
     </style>
@@ -104,77 +104,176 @@
     // для властивості modules зробити список з елементами
     // Приклад структири знаходиться у файлі example.png
     // - Є масив
-    let coursesArray = [
-        {
-            title: 'JavaScript Complex',
-            monthDuration: 5,
-            hourDuration: 909,
-            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-        },
-        {
-            title: 'Java Complex',
-            monthDuration: 6,
-            hourDuration: 909,
-            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'angular', 'aws', 'docker', 'git', 'java core', 'java advanced']
-        },
-        {
-            title: 'Python Complex',
-            monthDuration: 6,
-            hourDuration: 909,
-            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'angular', 'aws', 'docker', 'python core', 'python advanced']
-        },
-        {
-            title: 'QA Complex',
-            monthDuration: 4,
-            hourDuration: 909,
-            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-        },
-        {
-            title: 'FullStack',
-            monthDuration: 7,
-            hourDuration: 909,
-            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js', 'python', 'java']
-        },
-        {
-            title: 'Frontend',
-            monthDuration: 4,
-            hourDuration: 909,
-            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-        }
-    ];
+    // let coursesArray = [
+    //     {
+    //         title: 'JavaScript Complex',
+    //         monthDuration: 5,
+    //         hourDuration: 909,
+    //         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    //     },
+    //     {
+    //         title: 'Java Complex',
+    //         monthDuration: 6,
+    //         hourDuration: 909,
+    //         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'angular', 'aws', 'docker', 'git', 'java core', 'java advanced']
+    //     },
+    //     {
+    //         title: 'Python Complex',
+    //         monthDuration: 6,
+    //         hourDuration: 909,
+    //         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'angular', 'aws', 'docker', 'python core', 'python advanced']
+    //     },
+    //     {
+    //         title: 'QA Complex',
+    //         monthDuration: 4,
+    //         hourDuration: 909,
+    //         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    //     },
+    //     {
+    //         title: 'FullStack',
+    //         monthDuration: 7,
+    //         hourDuration: 909,
+    //         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js', 'python', 'java']
+    //     },
+    //     {
+    //         title: 'Frontend',
+    //         monthDuration: 4,
+    //         hourDuration: 909,
+    //         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    //     }
+    // ];
+    //
+    // let mainDiv = document.createElement('div');
+    // mainDiv.classList.add('mainDiv')
+    // document.body.appendChild(mainDiv);
+    //
+    //
+    // for (const element of coursesArray) {
+    //     let div = document.createElement('div');
+    //     mainDiv.appendChild(div)
+    //
+    //     let titleP = document.createElement('p');
+    //     titleP.innerText = element.title;
+    //     div.appendChild(titleP);
+    //
+    //     let monthDurationP = document.createElement('p');
+    //     monthDurationP.innerText = 'Month duration:' + ' ' + element.monthDuration;
+    //     div.appendChild(monthDurationP);
+    //
+    //     let hourDurationP = document.createElement('p');
+    //     hourDurationP.innerText = 'Hour duration' + ' ' + element.hourDuration;
+    //     div.appendChild(hourDurationP);
+    //
+    //     let modulesUl = document.createElement('ul');
+    //     div.appendChild(modulesUl)
+    //
+    //     let array = element.modules
+    //     for (const item of array) {
+    //         let modulesLi = document.createElement('li');
+    //         modulesLi.innerText = item
+    //         modulesUl.appendChild(modulesLi);
+    //     }
+    //     div.classList.add('blockDiv')
+    //
+    // }
+
+   // - створити блок,
+   //  - додати йому класи wrap, collapse, alpha, beta
+   //  - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
+   //  - додати цей блок в body.
+   //  - клонувати його повністю, та додати клон в body.
+   //
+   //  let div = document.createElement('div');
+   //  div.classList.add('wrap');
+   //  div.classList.add('collapse');
+   //  div.classList.add('alpha');
+   //  div.classList.add('beta');
+   //  div.innerText = 'Hello Okten'
+   //  div.style.background = 'silver';
+   //  div.style.color = 'blue';
+   //  div.style.fontSize = '20px';
+   //  document.body.appendChild(div);
+   //  let cloneDiv = div.cloneNode(true);
+   //  document.body.appendChild(cloneDiv);
+
+    // - Є масив
+    // let coursesAndDurationArray = [
+    //     {title: 'JavaScript Complex', monthDuration: 5},
+    //     {title: 'Java Complex', monthDuration: 6},
+    //     {title: 'Python Complex', monthDuration: 6},
+    //     {title: 'QA Complex', monthDuration: 4},
+    //     {title: 'FullStack', monthDuration: 7},
+    //     {title: 'Frontend', monthDuration: 4}
+    // ];
+    // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
+    // Завдання робити через цикли.
+    //
+    // let coursesAndDurationArray = [
+    //     {title: 'JavaScript Complex', monthDuration: 5},
+    //     {title: 'Java Complex', monthDuration: 6},
+    //     {title: 'Python Complex', monthDuration: 6},
+    //     {title: 'QA Complex', monthDuration: 4},
+    //     {title: 'FullStack', monthDuration: 7},
+    //     {title: 'Frontend', monthDuration: 4}
+    // ];
+    //
+    // let mainDiv = document.createElement('div');
+    // document.body.appendChild(mainDiv);
+    // for (const element of coursesAndDurationArray) {
+    //     let div = document.createElement('div');
+    //     mainDiv.append(div);
+    //
+    //     let title = document.createElement('p');
+    //     title.innerText = 'Title:' + ' ' + element.title;
+    //     div.appendChild(title);
+    //
+    //     let monthDuration = document.createElement('p');
+    //     monthDuration.innerText = 'Month duration:' + ' ' + element.monthDuration;
+    //     div.appendChild(monthDuration)
+    //
+    //     div.style.background = 'cornflowerblue'
+    // }
+
+    //- Є масив
+    // let coursesAndDurationArray = [
+    //     {title: 'JavaScript Complex', monthDuration: 5},
+    //     {title: 'Java Complex', monthDuration: 6},
+    //     {title: 'Python Complex', monthDuration: 6},
+    //     {title: 'QA Complex', monthDuration: 4},
+    //     {title: 'FullStack', monthDuration: 7},
+    //     {title: 'Frontend', monthDuration: 4}
+    // ];
+    //
+    //
+    // За допомоги скріпта для кожного елементу масиву зробити <div class='item'> ,  в якому буде <h1 class='heading'>  з title  елементу, та <p class='description'> з monthDuration елементу.
+    //     Завдання робити через цикли.
+
+    let coursesAndDurationArray = [
+        {title: 'JavaScript Complex', monthDuration: 5},
+        {title: 'Java Complex', monthDuration: 6},
+        {title: 'Python Complex', monthDuration: 6},
+        {title: 'QA Complex', monthDuration: 4},
+        {title: 'FullStack', monthDuration: 7},
+        {title: 'Frontend', monthDuration: 4}
+        ];
 
     let mainDiv = document.createElement('div');
-    mainDiv.classList.add('mainDiv')
     document.body.appendChild(mainDiv);
 
+    for (const element of coursesAndDurationArray) {
+        let elementDiv = document.createElement('div');
+        mainDiv.appendChild(elementDiv);
+        elementDiv.classList.add('item')
 
-    for (const element of coursesArray) {
-        let div = document.createElement('div');
-        mainDiv.appendChild(div)
+        let elementH1 = document.createElement('h1');
+        elementH1.innerText = 'Course name:' + ' ' + element.title;
+        elementDiv.appendChild(elementH1);
+        elementH1.classList.add('heading');
 
-        let titleP = document.createElement('p');
-        titleP.innerText = element.title;
-        div.appendChild(titleP);
-
-        let monthDurationP = document.createElement('p');
-        monthDurationP.innerText = 'Month duration:' + ' ' + element.monthDuration;
-        div.appendChild(monthDurationP);
-
-        let hourDurationP = document.createElement('p');
-        hourDurationP.innerText = 'Hour duration' + ' ' + element.hourDuration;
-        div.appendChild(hourDurationP);
-
-        let modulesUl = document.createElement('ul');
-        div.appendChild(modulesUl)
-
-        let array = element.modules
-        for (const item of array) {
-            let modulesLi = document.createElement('li');
-            modulesLi.innerText = item
-            modulesUl.appendChild(modulesLi);
-        }
-        div.classList.add('blockDiv')
-
+        let elementP = document.createElement('p');
+        elementP.innerText = 'Course duration:' + ' ' + element.monthDuration;
+        elementDiv.appendChild(elementP);
+        elementP.classList.add('description')
     }
 
 
