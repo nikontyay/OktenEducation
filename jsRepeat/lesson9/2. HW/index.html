@@ -32,6 +32,20 @@
     </style>
 </head>
 <body>
+<!--task input 1 -->
+<!--<form action="" name="f1">-->
+<!--    <input type="number" placeholder="age" name="userAge">-->
+<!--    <button>Submit</button>-->
+<!--</form>-->
+
+<!--task input2-->
+<form action="" name="f2">
+    <input type="number" placeholder="кількість рядків" name="numberOfRows">
+    <input type="number" placeholder="кількість ячеєк" name="numberOfCells">
+    <input type="text" placeholder="вміст ячеєк" name="contentOfCells">
+    <button>Submit</button>
+</form>
+
 
 <script>
 
@@ -276,15 +290,60 @@
     //     elementP.classList.add('description')
     // }
 
-    // - Створити довільний елемент з id = text.  Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
-    //
-    //
+    // - Створити довільний елемент з id = text. Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
+   // let mainDiv = document.createElement('div');
+   // document.body.appendChild(mainDiv);
+   // mainDiv.setAttribute('id','text');
+   // mainDiv.style.width = '200px';
+   // mainDiv.style.height = '200px';
+   // mainDiv.style.border = '2px solid black';
+   // mainDiv.style.background = 'cornflowerblue'
+   // mainDiv.onclick = function () {
+   //     if (mainDiv.style.display !== 'none') {
+   //         mainDiv.style.display = 'none';
+   //     }
+   //     else {
+   //         mainDiv.style.display = 'block';
+   //     }
+   // }
+
+
     //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
-    //
-    //
+    // document.forms['f1'].onsubmit = function (e) {
+    //     e.preventDefault();
+    //     let value = this.userAge.value;
+    //     console.log(value)
+    //     if (value < 18) {
+    //         alert('Your age is less than 18 years')
+    //     }
+    // }
+
     // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+    // document.forms['f2'].onsubmit = function (e) {
+    //     e.preventDefault();
+    //     let numberOfRows = this.numberOfRows.value;
+    //     let numberOfCells = this.numberOfCells.value;
+    //     let contentOfCells = this.contentOfCells.value;
+    //     console.log(numberOfRows,numberOfCells,contentOfCells)
+    // }
+
+
     //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
-    // (Додатковачастина для завдання)
+    // (Додаткова частина для завдання)
+    document.forms['f2'].onsubmit = function (e) {
+        e.preventDefault();
+        let numberOfRows = this.numberOfRows.value;
+        let numberOfCells = this.numberOfCells.value;
+        let contentOfCells = this.contentOfCells.value;
+        console.log(numberOfRows,numberOfCells,contentOfCells);
+    }
+    let mainDiv = document.createElement('div');
+    document.body.appendChild(mainDiv);
+    for (let i = 0; i < 3; i++) {
+        let childDiv = document.createElement('div');
+        mainDiv.appendChild(childDiv)
+    }
+
 
 
 
