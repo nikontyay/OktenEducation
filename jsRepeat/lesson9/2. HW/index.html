@@ -41,7 +41,7 @@
 <!--task input2-->
 <form action="" name="f2">
     <input type="number" placeholder="кількість рядків" name="numberOfRows">
-    <input type="number" placeholder="кількість ячеєк" name="numberOfCells">
+    <input type="number" placeholder="кількість ячеєк" name="numberOfColumns">
     <input type="text" placeholder="вміст ячеєк" name="contentOfCells">
     <button>Submit</button>
 </form>
@@ -67,51 +67,51 @@
     //         surname: 'Simpson',
     //         age: 40,
     //         info: 'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.',
-    //         photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
-    //     },
-    //     {
-    //         name: 'Marge',
-    //         surname: 'Simpson',
-    //         age: 38,
-    //         info: 'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.',
-    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'
-    //     },
-    //     {
-    //         name: 'Lisa',
-    //         surname: 'Simpson',
-    //         age: 9,
-    //         info: 'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.',
-    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'
-    //     },
-    //     {
-    //         name: 'Maggie',
-    //         surname: 'Simpson',
-    //         age: 1,
-    //         info: 'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.',
-    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
-    //     },
-    // ];
-    //
-    // for (const familyMember of simpsons) {
-    //     let divElement = document.createElement('div');
-    //     document.body.appendChild(divElement);
-    //
-    //     let h1 = document.createElement('h1');
-    //     h1.innerText = familyMember.name + ' ' + familyMember.surname;
-    //     divElement.appendChild(h1);
-    //
-    //     let pAge = document.createElement('p');
-    //     pAge.innerText = 'age:' + ' ' + familyMember.age;
-    //     divElement.appendChild(pAge);
-    //
-    //     let pInfo = document.createElement('p');
-    //     pInfo.innerText = familyMember.info;
-    //     divElement.appendChild(pInfo);
-    //
-    //     let img = document.createElement('img');
-    //     img.setAttribute('src',familyMember.photo);
-    //     divElement.appendChild(img)
-    // }
+    // //         photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
+    // //     },
+    // //     {
+    // //         name: 'Marge',
+    // //         surname: 'Simpson',
+    // //         age: 38,
+    // //         info: 'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.',
+    // //         photo: 'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'
+    // //     },
+    // //     {
+    // //         name: 'Lisa',
+    // //         surname: 'Simpson',
+    // //         age: 9,
+    // //         info: 'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.',
+    // //         photo: 'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'
+    // //     },
+    // //     {
+    // //         name: 'Maggie',
+    // //         surname: 'Simpson',
+    // //         age: 1,
+    // //         info: 'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.',
+    // //         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
+    // //     },
+    // // ];
+    // //
+    // // for (const familyMember of simpsons) {
+    // //     let divElement = document.createElement('div');
+    // //     document.body.appendChild(divElement);
+    // //
+    // //     let h1 = document.createElement('h1');
+    // //     h1.innerText = familyMember.name + ' ' + familyMember.surname;
+    // //     divElement.appendChild(h1);
+    // //
+    // //     let pAge = document.createElement('p');
+    // //     pAge.innerText = 'age:' + ' ' + familyMember.age;
+    // //     divElement.appendChild(pAge);
+    // //
+    // //     let pInfo = document.createElement('p');
+    // //     pInfo.innerText = familyMember.info;
+    // //     divElement.appendChild(pInfo);
+    // //
+    // //     let img = document.createElement('img');
+    // //     img.setAttribute('src',familyMember.photo);
+    // //     divElement.appendChild(img)
+    // // }
 
     // Цикл в циклі
     // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей,
@@ -198,10 +198,7 @@
    //  - клонувати його повністю, та додати клон в body.
    //
    //  let div = document.createElement('div');
-   //  div.classList.add('wrap');
-   //  div.classList.add('collapse');
-   //  div.classList.add('alpha');
-   //  div.classList.add('beta');
+   //  div.classList.add('wrap', 'collapse','alpha','beta');
    //  div.innerText = 'Hello Okten'
    //  div.style.background = 'silver';
    //  div.style.color = 'blue';
@@ -299,14 +296,8 @@
    // mainDiv.style.border = '2px solid black';
    // mainDiv.style.background = 'cornflowerblue'
    // mainDiv.onclick = function () {
-   //     if (mainDiv.style.display !== 'none') {
    //         mainDiv.style.display = 'none';
-   //     }
-   //     else {
-   //         mainDiv.style.display = 'block';
-   //     }
    // }
-
 
     //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
     // document.forms['f1'].onsubmit = function (e) {
@@ -317,32 +308,57 @@
     //         alert('Your age is less than 18 years')
     //     }
     // }
-
-    // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
-    // document.forms['f2'].onsubmit = function (e) {
-    //     e.preventDefault();
-    //     let numberOfRows = this.numberOfRows.value;
-    //     let numberOfCells = this.numberOfCells.value;
-    //     let contentOfCells = this.contentOfCells.value;
-    //     console.log(numberOfRows,numberOfCells,contentOfCells)
+    //
+    // or
+    //
+    // let input = document.createElement('input');
+    // let button = document.createElement('button');
+    // button.innerText = 'Submit';
+    //
+    // document.body.append(input,button);
+    // button.onclick = function () {
+    //     input.oninput;
+    //     console.log(input.value)
+    //     if (input.value < 18) {
+    //         alert('WoooooW, stop')
+    //     }
     // }
-
-
+    
+    
+    // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
     //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
     // (Додаткова частина для завдання)
     document.forms['f2'].onsubmit = function (e) {
-        e.preventDefault();
-        let numberOfRows = this.numberOfRows.value;
-        let numberOfCells = this.numberOfCells.value;
-        let contentOfCells = this.contentOfCells.value;
-        console.log(numberOfRows,numberOfCells,contentOfCells);
+        e.preventDefault ();
+
+        let tr = this.numberOfRows.value;
+        let td = this.numberOfColumns.value;
+        let content = this.contentOfCells.value;
+
+        let generateTable = function (rows,columns,words) {
+            let table = document.createElement('table');
+            table.style.border = '2px solid black';
+            document.body.appendChild(table);
+
+            for (let i = 0; i < rows; i++) {
+                let row = document.createElement('tr');
+                table.appendChild(row);
+                row.style.border = '2px solid cornflowerblue';
+
+                for (let j = 0; j < columns; j++) {
+                    let column = document.createElement('td');
+                    column.innerText = words;
+                    column.style.border = '2px solid cornflowerblue';
+                    row.appendChild(column);
+                }
+            }
+        }
+        generateTable(tr,td,content);
     }
-    let mainDiv = document.createElement('div');
-    document.body.appendChild(mainDiv);
-    for (let i = 0; i < 3; i++) {
-        let childDiv = document.createElement('div');
-        mainDiv.appendChild(childDiv)
-    }
+
+
+
+
 
 
 
