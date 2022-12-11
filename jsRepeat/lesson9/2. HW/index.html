@@ -38,15 +38,6 @@
 <!--    <button>Submit</button>-->
 <!--</form>-->
 
-<!--task input2-->
-<form action="" name="f2">
-    <input type="number" placeholder="кількість рядків" name="numberOfRows">
-    <input type="number" placeholder="кількість ячеєк" name="numberOfColumns">
-    <input type="text" placeholder="вміст ячеєк" name="contentOfCells">
-    <button>Submit</button>
-</form>
-
-
 <script>
 
     //- є масив
@@ -328,33 +319,7 @@
     // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
     //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
     // (Додаткова частина для завдання)
-    document.forms['f2'].onsubmit = function (e) {
-        e.preventDefault ();
 
-        let tr = this.numberOfRows.value;
-        let td = this.numberOfColumns.value;
-        let content = this.contentOfCells.value;
-
-        let generateTable = function (rows,columns,words) {
-            let table = document.createElement('table');
-            table.style.border = '2px solid black';
-            document.body.appendChild(table);
-
-            for (let i = 0; i < rows; i++) {
-                let row = document.createElement('tr');
-                table.appendChild(row);
-                row.style.border = '2px solid cornflowerblue';
-
-                for (let j = 0; j < columns; j++) {
-                    let column = document.createElement('td');
-                    column.innerText = words;
-                    column.style.border = '2px solid cornflowerblue';
-                    row.appendChild(column);
-                }
-            }
-        }
-        generateTable(tr,td,content);
-    }
 
 
 
