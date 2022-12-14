@@ -319,6 +319,45 @@
     // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
     //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
     // (Додаткова частина для завдання)
+    let mainDiv = document.createElement('div');
+    let input1 = document.createElement('input');
+    let input2 = document.createElement('input');
+    let input3 = document.createElement('input');
+    let button = document.createElement('button');
+    button.innerText = 'Click me'
+    document.body.appendChild(mainDiv);
+    mainDiv.append(input1,input2,input3,button);
+
+    button.onclick = function () {
+        let tr = input1.value;
+        let td = input2.value;
+        let text = input3.value;
+
+    let generateTable = function (raws,columns,words) {
+        let table = document.createElement('table');
+        table.style.border = '2px solid black'
+        mainDiv.appendChild(table);
+
+        for (let i = 0; i < raws; i++) {
+            let raw = document.createElement('tr');
+            table.appendChild(raw);
+            for (let i = 0; i < columns; i++) {
+                let column = document.createElement('td');
+                column.style.border = '1px solid black'
+                column.innerText = `${words}`;
+                table.appendChild(column);
+            }
+        }
+    }
+    generateTable(tr,td,text);
+    };
+
+
+
+
+
+
+
 
 
 
