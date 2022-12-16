@@ -9,24 +9,24 @@
 <script>
   
 // ({data}) - з нашого об'єкту вампіром беремо змінну data
-  fetch('https://reqres.in/api/users?page=1')
-          .then(response => response.json())
-          .then(({data}) => {
-            for (const user of data) {
-              let div = document.createElement('div');
-              div.classList.add('user-box');
-              let h2 = document.createElement('h2');
-              h2.innerText = `${user.id} ${user.first_name} ${user.last_name}`;
-
-              let img = document.createElement('img');
-              img.src = user.avatar;
-
-              div.append(h2, img);
-
-              document.body.appendChild(div);
-            }
-          })
-
+//   fetch('https://reqres.in/api/users?page=1')
+//           .then(response => response.json())
+//           .then(({data}) => {
+//             for (const user of data) {
+//               let div = document.createElement('div');
+//               div.classList.add('user-box');
+//               let h2 = document.createElement('h2');
+//               h2.innerText = `${user.id} ${user.first_name} ${user.last_name}`;
+//
+//               let img = document.createElement('img');
+//               img.src = user.avatar;
+//
+//               div.append(h2, img);
+//
+//               document.body.appendChild(div);
+//             }
+//           })
+//
 // or
 // fetch('https://reqres.in/api/users?page=1')
 //         .then(response => response.json())
@@ -34,6 +34,29 @@
 //            let data = value.data; or let {data} = value;
 //            console.log (data);
 //            });
+
+
+
+fetch('https://reqres.in/api/users?page=1')
+    .then(response => response.json())
+    .then(({data}) => {
+        for (const user of data) {
+            let div = document.createElement('div');
+            div.classList.add('user-box');
+            let h2 = document.createElement('h2');
+            let a = document.createElement('a');
+            a.innerText = `${user.id} ${user.first_name} ${user.last_name}`;
+            h2.appendChild(a);
+            a.href = 'details.html?id=' + user.id
+
+            let img = document.createElement('img');
+            img.src = user.avatar;
+
+            div.append(h2, img);
+
+            document.body.appendChild(div);
+        }
+    })
 
 </script>
 

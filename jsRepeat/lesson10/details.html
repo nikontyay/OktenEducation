@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Details Page</h1>
+
+<script>
+
+    // Робимо так, щоб на сторінці Details була інфа про користувача згідно його id.
+    //
+    // для того, щоб з нашої адресної строки дістати URL, потрібний клас URL (він бібліотечний)
+    // SearchParams - змінна всередині url.
+    // location.href - зчитує з браузера, що знаходиться в адресній строці (зчитує посилання)
+    let url = new URL(location.href);
+    console.log(url);
+    let id = url.searchParams.get("id"); // шукаємо по параметру id, який є в url http://localhost:63342/OktenEducation/jsRepeat/lesson10/details.html?id=1
+    console.log(id);
+
+    let apiURL = 'https://reqres.in/api/users/'
+
+    fetch( apiURL + id)
+        .then((request) => request.json())
+        .then((value) => {
+            console.log(value.data);
+            let {data:userData} = value;
+            let div = document.createElement('div');
+            let h2 = document.createElement('h2');
+            h2.innerText = `${userData.id} ${userData.first_name} ${userData.last_name} ${userData.email}`;
+            let img = document.createElement('img');
+            img.src = userData.avatar;
+
+            document.body.appendChild(div);
+            div.append(h2,img);
+        })
+
+
+</script>
+
+</body>
+</html>
