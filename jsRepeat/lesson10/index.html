@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>start</h1>
+<ul class="target"></ul>
+<h2>end</h2>
+
+<script>
+    // fetch це асинхронний запит - виконується впродовж 10 секунд (можна сказати паралельно). Тому спочатку, побачимо 'start', 'end', а потім
+    // результат фетчу.
+    console.log('start')
+    let target = document.querySelector('.target');
+
+  //jsonplaceholder - site, json viewer - chrome app
+  //API - прикладний інтерфейс програмування (дають інтерфейс користування, а ми вже інтерпретуємо їх як захочемо)
+  // fetch - це  запит. Response,data - довільні назви.
+  // 'Fetch' - робимо запит;
+  // .then(response => response.json()) - отримуємо об'єкт та відкриваємо його, отримуємо json інфу с об'єкта
+  // .then(data => ) - отримуємо чисті дані
+
+    let x;
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(data => {
+            x = data;
+            for (const element of data) {
+                let li = document.createElement('li');
+                li.innerText = element.name + ' ' + element.id + ' ' + element.email;
+                target.appendChild(li);
+            }
+        });
+
+    console.log('end');
+    console.log(x); // буде undefined
+
+</script>
+
+</body>
+</html>
