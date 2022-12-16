@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let url = new URL (location.href);
+    let post = url.searchParams.get('post'); // завдяки переданого JSON об'єкту можемо шукати наш об'єкт
+    console.log(post);
+    let parse = JSON.parse(post);
+    console.log(parse);
+</script>
+
+</body>
+</html>
