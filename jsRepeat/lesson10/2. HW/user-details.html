@@ -31,10 +31,20 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
                 li.innerText = `${element} ${value[element]}`;
             } else {
                 li.innerText = `${element}:`
+
                 for (const key in value[element]) {
                     let li = document.createElement('li');
-                    li.innerText = `${key} ${value[element][key]}`;
                     ul.appendChild(li);
+                    if (typeof value[element][key] !== 'object') {
+                        li.innerText = `${key} ${value[element][key]}`;
+                    } else {
+                        li.innerText = `${key}:`
+                        for (const item in value[element][key]) {
+                            let li = document.createElement('li');
+                            ul.appendChild(li);
+                            li.innerText = `${item} ${value[element][key][item]}`
+                        }
+                    }
                 }
             }
 
