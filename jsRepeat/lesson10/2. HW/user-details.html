@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+// let url = new URL (location.href);
+// let id = url.searchParams.get('id');
+// let parse = JSON.parse(id);
+// console.log(parse);
+
+let url = new URL(location.href);
+let id = url.searchParams.get("id");
+console.log(id);
+
+fetch('https://jsonplaceholder.typicode.com/users/' + id)
+    .then((request) => request.json())
+    .then((value) => {
+        console.log(value);
+        let ul = document.createElement('ul');
+        document.body.appendChild(ul);
+        for (const element in value) {
+            let li = document.createElement('li');
+            li.innerText = `${value[element]}`;
+            ul.appendChild(li);
+            li.classList.add('lishko')
+        }
+    })
+
+
+</script>
+
+</body>
+</html>
