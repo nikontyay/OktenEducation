@@ -20,6 +20,26 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
         for (const element in value) {
             let userDiv = document.createElement('div');
             container.appendChild(userDiv);
-            userDiv.innerText = `${element}: ${value[element]}`;
+            if (typeof value[element] !== 'object') {
+                userDiv.innerText = `${element} --- ${value[element]}`;
+            } else {
+                userDiv.innerText = `${element}:`
+                for (const item in value[element]) {
+                    let userInnerDiv = document.createElement('div');
+                    userDiv.appendChild(userInnerDiv);
+                    if (typeof value[element][item] !== 'object') {
+                        userInnerDiv.innerText = `${item} --- ${value[element][item]}`
+                    } else {
+                        userInnerDiv.innerText = `${item}:`
+                        for (const key in value[element][item]) {
+                            let userHtmlDiv = document.createElement('div');
+                            userInnerDiv.appendChild(userHtmlDiv);
+                            if (typeof value[element][item][key] !== 'object') {
+                                userHtmlDiv.innerText = `${key} --- ${value[element][item][key]}`
+                            }
+                        }
+                    }
+                }
+            }
         }
     })
