@@ -10,13 +10,14 @@
     display: flex;
     justify-content: center;
     background: cornflowerblue;
-    gap: 16px;
+    gap: 10px;
 }
 
 .userDiv {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
     background: #36cd98;
     display: flex;
@@ -29,12 +30,14 @@
     display: flex;
     justify-content: center;
     background: cornflowerblue;
+
 }
 
 .userPostsButton {
     min-width: 90%;
     background: lightblue;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .containerDiv {
@@ -43,9 +46,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: space-evenly;
-    min-height: 120px;
+    align-content: flex-start;
+    min-height: 100px;
     column-gap: 10px;
+    gap: 10px;
 }
 .postDiv {
     background: #36cd98;
