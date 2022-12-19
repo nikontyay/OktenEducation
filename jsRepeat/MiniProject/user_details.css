@@ -1,6 +1,11 @@
 /*// user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
 /*// блоки з короткою іфною про post - в ряд по 5 .*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
     justify-content: center;

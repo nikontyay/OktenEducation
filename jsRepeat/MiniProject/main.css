@@ -1,6 +1,11 @@
 /*// Стилизація проєкта -*/
 /*// index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
