@@ -16,7 +16,7 @@
 .userDiv {
     box-sizing: border-box;
     border: 2px solid black;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     background: #36cd98;
@@ -55,7 +55,7 @@
     background: #36cd98;
     box-sizing: border-box;
     border: 2px solid black;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

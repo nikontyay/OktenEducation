@@ -51,6 +51,7 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
                     document.body.appendChild(containerDiv);
                     containerDiv.classList.add('containerDiv');
                     for (const item of data) {
+                        console.log(item);
                         let postDiv = document.createElement('div');
                         containerDiv.appendChild(postDiv);
                         postDiv.classList.add('postDiv');
