@@ -294,6 +294,44 @@
 // console.log(a && b && c && d); // буде значення змінної a
 // console.log(a || b || c || d); // буде значення змінної b
 
+// Оператор ... - бере ключі об'єктів
+// const  button = {
+//     width: 200,
+//     text: 'Buy',
+//     color: 'red'
+// }
+//
+// const button2 = {
+//     ...button,
+//     color: 'black'
+// }
+// console.log(button2);
+//
+// const buttonInfo = {
+//     text: 'Buy'
+// }
+//
+// const buttonStyle = {
+//     color: 'yellow',
+//     width: 200,
+//     height: 300
+// }
+//
+// const completeButton = {
+//     ...buttonInfo,
+//     ...buttonStyle
+// }
+// console.log(completeButton);
+
+// Template String (шаблонна стрічка)
+// let myName = 'Danylo';
+// let c = `Hello, my name is ${myName}`;
+// console.log(c);
+
+
+
+
+
 
 
 
