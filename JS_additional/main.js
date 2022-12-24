@@ -328,6 +328,8 @@
 // let c = `Hello, my name is ${myName}`;
 // console.log(c);
 
+console.log('hello')
+
 
 
 
