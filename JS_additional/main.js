@@ -157,6 +157,17 @@
 // }
 //
 // setTimeout(printMyName,1000);
+//
+// function greet (name, callback) {
+//     console.log('Hi' + ' ' + name);
+//     callback ();
+// }
+//
+// function hello () {
+//     console.log('something')
+// }
+//
+// greet('Danylo', hello);
 
 // Правила функцій:
 // 1. Називати функції виходячи з результату функції (щоб назва була логічна)
@@ -328,7 +339,92 @@
 // let c = `Hello, my name is ${myName}`;
 // console.log(c);
 
+// Функціональне вираження
+// Анонімна функція
+// function () {
+//     console.log('Hello')
 //
+// let someFunction = function () {
+//     console.log('Hello')
+// }
+//
+// Часто використовується як callback (аргумент)
+// setTimeout(function () {
+//     console.log('Відкладене сповіщення ')
+// }, 1000)
+
+//Стрілкова функція - завжди анонімна
+// const myFn = (a, b) => {
+//     let c
+//     a = a + 1;
+//     c = a + b;
+//     return c
+// }
+// console.log(myFn(10, 4));
+//
+// const myFn2 = (a, b) => a + b;
+// console.log(myFn2(10, 8));
+//
+// Як callback
+// setTimeout(() => {
+//     console.log('Hello')
+// }, 1000);
+
+// Значення функції за замовчуванням
+// Функціональне вираження
+// function multiplier (value, multiplier = 1) {
+//     return value * multiplier;
+// }
+// console.log(multiplier(10,2));
+//
+// Анонімне функціональне вираження
+// let multiplier = function (value, multiplier = 1) {
+//     return value * multiplier;
+// }
+// console.log(multiplier(10,2));
+//
+// Стрілкова функція
+// let multiplier = ((value, multiplier = 1) => value * multiplier);
+// console.log(multiplier(10,2));
+//
+// Якщо робити не через замовчування, то код буде більший
+// function multiplier (value, multiplier) {
+//     if (typeof multiplier === 'undefined') {
+//         multiplier = 1
+//     }
+//     return value * multiplier
+// }
+// console.log(multiplier(10,2));
+
+// Значення функції за замовчуванням
+// Після => ставимо круглі дужки, щоб JS думав ми формуємо новий об'єкт, використовуючи spread оператор, та додаємо
+// новий ключ до нового об'єкта
+// const newPost = (post, addedAt = Date()) => ({
+//     ...post,
+//     addedAt
+// });
+//
+// const firstPost = {
+//     id: 1,
+//     name: 'Danylo'
+// }
+//
+// let secondPost = newPost(firstPost);
+// console.log(secondPost);
+//
+// const newPost = function (post, addedAt = Date()) {
+//     let somePost = {
+//         ...post,
+//         addedAt
+//     }
+//     return somePost
+// }
+//
+// const firstPost = {
+//     id: 1,
+//     name: 'Danylo'
+// }
+// console.log(newPost(firstPost));
 
 
 
