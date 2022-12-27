@@ -8,7 +8,7 @@
 // insert into - наповнюємо табличку
 // values - які значення додаємо
 
-// select * from users - вибрати все з таблички users (* - вибрати все)
+// select * from users - вибрати все (вивести всі стовпці) з таблички users (* - вибрати все)
 // select * from  users where name = 'Oleg'  --- виводить всі стовпці таблиці де name = oleg
 // select * from  users where name like  'o%'; --- like робить пошук де ім'я починається на "о", а далі байдуже (знак %)
 // select * from  users where name like  '%o%'; --- знайти де хоча б є одне "о" - байдуже скільки букв буде до та після "о".
