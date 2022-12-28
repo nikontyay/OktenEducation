@@ -33,3 +33,8 @@
 // select * from cars where length(model) > 8;
 //
 // # ***знайти машини ціна котрих більше ніж ціна середнього арифметичного всіх машин
+// select model, price from cars where price > (select avg(price) from cars);
+
+// select model, price,
+//     (select avg(price) from cars) as avaragePrice
+// from cars;
