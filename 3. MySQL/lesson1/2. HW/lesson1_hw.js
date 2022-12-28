@@ -28,7 +28,7 @@
 // select model, count(model) as quantity from cars group by model order by quantity desc limit 1;
 //
 // # знайти марку машини в назві яких друга та передостання буква "a"
-// select * from cars where model like '_a%%a_';
+// select * from cars where model like '_a%a_';
 // # знайти всі машини назва моделі яких більше за 8 символів
 // select * from cars where length(model) > 8;
 //
