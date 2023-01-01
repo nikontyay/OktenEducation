@@ -1,4 +1,4 @@
-//# 1.Вибрати усіх клієнтів, чиє ім'я має менше ніж 6 символів.
+// # 1.Вибрати усіх клієнтів, чиє ім'я має менше ніж 6 символів.
 // select * from client where length(FirstName) < 6;
 //
 // # 2.Вибрати львівські відділення банку.
@@ -47,18 +47,38 @@
 //     join application on Client_idClient = client.idClient where Sum = (select max(Sum) as maxCredit from application)
 // union
 // select Sum, FirstName, LastName from client
-//     join application on Client_idClient = client.idClient where Sum = (select min(Sum) as maxCredit from application)
+//     join application on Client_idClient = client.idClient where Sum = (select min(Sum) as maxCredit from application);
+// # or
+// select max(Sum) as maxCredit, client.* from client
+//     join application on Client_idClient = client.idClient group by idClient order by maxCredit desc limit 1;
 //
 // # 13. Порахувати кількість кредитів для клієнтів,які мають вищу освіту.
-// #
+// select FirstName, LastName, Education, count(idApplication) as qtyCredits
+// from client
+//     join application on Client_idClient = client.idClient where Education = 'high' group by idClient;
+//
 // # 14. Вивести дані про клієнта, в якого середня сума кредитів найвища.
-// #
+// select avg(Sum) as avgSum, client.* from client
+//     join application on Client_idClient = client.idClient group by idClient order by avgSum desc limit 1;
+//
 // # 15. Вивести відділення, яке видало в кредити найбільше грошей
-// #
+// select sum(Sum) as maxSum, DepartmentCity from client
+//     join application on Client_idClient = client.idClient
+//     join department on idDepartment = client.Department_idDepartment group by DepartmentCity order by maxSum desc limit 1;
+//
 // # 16. Вивести відділення, яке видало найбільший кредит.
-// #
+// select max(Sum) as maxSum, DepartmentCity from client
+//     join application on Client_idClient = client.idClient
+//     join department on idDepartment = client.Department_idDepartment group by DepartmentCity order by maxSum desc limit 1;
+//
 // # 17. Усім клієнтам, які мають вищу освіту, встановити усі їхні кредити у розмірі 6000 грн.
-// #
+// update application join client on idClient = application.Client_idClient
+// set Sum = 6000
+// where Education = 'High';
+//
+// select * from client
+// join application on client.idClient = application.Client_idClient;
+//
 // # 18. Усіх клієнтів київських відділень пересилити до Києва.
 // #
 // # 19. Видалити усі кредити, які є повернені.
