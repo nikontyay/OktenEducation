@@ -27,12 +27,11 @@
 //     where Sum > 5000;
 //
 // # 9.Порахувати кількість клієнтів усіх відділень та лише львівських відділень.
-// select count(idClient) from client
-//     join department on idDepartment = client.Department_idDepartment
-// union
-// select count(idClient) from client
-//     join department on idDepartment = client.Department_idDepartment
-// where DepartmentCity = 'Lviv';
+// # select (select count(DepartmentCity) from client
+// #     join department d on d.idDepartment = client.Department_idDepartment) as all_Department,
+// # (select count(DepartmentCity) from client
+// #     join department d on d.idDepartment = client.Department_idDepartment
+// # where DepartmentCity = 'Lviv') as lviv_Department;
 //
 // # 10.Знайти кредити, які мають найбільшу суму для кожного клієнта окремо.
 // select max(Sum) as maxCredit, client.* from client
