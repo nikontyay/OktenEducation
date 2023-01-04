@@ -90,7 +90,7 @@ db.users.find({},{age:1,gender:1, _id:0});
 db.users.find({'address.house':45});
 // Пошук з масиву (сам перебере масив)
 db.users.find({studying: /Java/i});
-// знайти всіх юзерів в яких довжина масиву studying дорівнює 3
+// знайти всіх юзерів в яких довжина масиву studying дорівнює 1
 db.users.find({studying:{$size:1}});
 // Exists - шукає юзерів у яких немає поля parents
 db.users.find({parents:{$exists:0}});
