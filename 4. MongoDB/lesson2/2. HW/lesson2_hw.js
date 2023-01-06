@@ -99,7 +99,7 @@ db.students.aggregate([
 // 12) Знайти дітей з не повною сімєю
 db.students.aggregate([
     {
-        $match:{
+        $match: {
             parents: {$size: 1}
         }
     }
@@ -126,13 +126,21 @@ db.students.aggregate([
         $unwind: '$parents'
     },
     {
-        $match:{
+        $match: {
             'parents.profession': 'teacher'
         }
     },
     {
         $set: {
             avgScore: 5
+        }
+    }
+])
+
+db.students.aggregate([
+    {
+        $match: {
+            _id: ObjectId('63b7f4a1c89bc72be55cd6b3')
         }
     }
 ])
@@ -150,6 +158,47 @@ db.students.aggregate([
 ])
 
 // 17) Знайти найуспішніший клас
-
+db.students.aggregate([
+    {
+        $group: {
+            _id: '$class',
+            avgMark: {$avg: '$avgScore'}
+        }
+    },
+    {
+        $sort: {
+            avgMark: -1
+        }
+    },
+    {
+        $limit: 1
+    },
+    {
+        $project: {
+            avgMark: 1,
+            class: '$_id',
+            _id: 0
+        }
+    }
+])
 
 // ********** Не працюючих батьків влаштувати офіціантами (підказка: гуглимо "arrayFilters")
+db.students.aggregate([
+    {
+        $unwind: '$parents'
+    },
+    {
+        $match: {
+            'parents.profession': null
+        }
+    },
+    {
+        $set: {
+            'parents.profession': 'oficiant'
+        }
+    }
+])
+
+db.students.find({
+    'parents.profession': 'teacher'
+})
