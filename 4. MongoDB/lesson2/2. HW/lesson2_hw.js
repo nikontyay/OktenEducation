@@ -117,33 +117,25 @@ db.students.aggregate([
     }
 ])
 
-//NOT DONE// 14) Вигнати дітей, які мають середній бал менше ніж 2.5
+// 14) Вигнати дітей, які мають середній бал менше ніж 2.5
+db.students.deleteMany(
+    {
+        avgScore: {$lt: 2.5}
+    }
+)
 
 
 // 15) Дітям, батьки яких працюють в освіті ( teacher ) поставити 5
-db.students.aggregate([
+db.students.updateMany(
     {
-        $unwind: '$parents'
-    },
-    {
-        $match: {
-            'parents.profession': 'teacher'
-        }
+        'parents.profession': 'teacher'
     },
     {
         $set: {
             avgScore: 5
         }
     }
-])
-
-db.students.aggregate([
-    {
-        $match: {
-            _id: ObjectId('63b7f4a1c89bc72be55cd6b3')
-        }
-    }
-])
+)
 
 // 16) Знайти дітей які вчаться в початковій школі (до 5 класу) і вивчають фізику ( physics )
 db.students.aggregate([
@@ -183,22 +175,5 @@ db.students.aggregate([
 ])
 
 // ********** Не працюючих батьків влаштувати офіціантами (підказка: гуглимо "arrayFilters")
-db.students.aggregate([
-    {
-        $unwind: '$parents'
-    },
-    {
-        $match: {
-            'parents.profession': null
-        }
-    },
-    {
-        $set: {
-            'parents.profession': 'oficiant'
-        }
-    }
-])
 
-db.students.find({
-    'parents.profession': 'teacher'
-})
+
