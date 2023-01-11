@@ -478,6 +478,180 @@
 // myFn (a = a + 1;) - не буде працювати, бо функція потребує вираз в якості аргументу, а не інструкцію
 // myFn (a = a + 1) - ця функція буде працювати, бо всередині вираз
 
+//Масив - це об'єкт
+// const myArray = [1,2,3];
+// console.log(myArray);
+//
+// const myArray2 = new Array(1,true,'hello');
+// console.log(myArray2);
+// console.log(myArray2.length);
+//
+// console.log(myArray[0]);
+// myArray[2] = true;
+// console.log(myArray);
+
+// Методи масивів - функції вищого порядку (функції прототипів)
+// const myArray = [1,2,3];
+//
+// метод push - додає значення в кінець масиву
+// myArray.push('hello');
+// console.log(myArray);
+//
+//
+// метод pop - видаляє значення в кінці масиву, та повертає видалене значення (можна задати змінну)
+// const removedElement = myArray.pop();
+// console.log(removedElement);
+//
+//
+// метод unshift - додає елемента в початок масиву
+// myArray.unshift('okten');
+// console.log(myArray);
+//
+//
+// метод shift - видаляє елемент з початку масиву, та повертає видалене значення (можна задати змінну)
+// const removedElement2 = myArray.shift();
+// console.log(removedElement2);
+//
+//
+// метод forEach - аргумент це функція. Перебирає кожен елемент. Не змінює оригінальний масив
+// myArray.forEach(el => console.log(el * 2));
+// const result = myArray.forEach(el => console.log(el * 2)); // метод forEach повертає undefined
+// console.log(result);
+//
+//
+// метод map - аргумент це функція. Перебирає кожен елемент. Не змінює оригінальний масив.
+// Повертає новий масив (є return)
+// myArray.map(el => console.log(el * 2));
+// console.log(myArray);
+//
+// const result = myArray.map(el => el * 3);
+// console.log(result);
+// //or
+// const result2 = myArray.map(el => {
+//     return el * 10
+// });
+// console.log(result2);
+// //or
+// const result3 = myArray.map(function (el) {
+//     return el * 30
+// })
+// console.log(result3);
+
+// Деструктуризація об'єктів
+// const userProfile = {
+//     name: 'Bogdan',
+//     commentsQty : 23,
+//     hasSignedAgreement: false
+// }
+//
+// const  {name:userName, commentsQty} = userProfile;
+// const {hasSignedAgreement} = userProfile;
+//
+// console.log(userName);
+// console.log(commentsQty);
+// console.log(hasSignedAgreement);
+
+// Деструктуризація масивів - призначення змінних згідно з індексом масиву (одночасно даємо нову назву змінної)
+// const fruits = ['Apple', 'Banana'];
+//
+// const [fruitOne, fruitTwo] = fruits;
+//
+// console.log(fruitOne);
+// console.log(fruitTwo);
+//
+// // Деструктуризація в функціях
+// const userProfile = {
+//     name: 'Bogdan',
+//     commentsQty : 23,
+//     hasSignedAgreement: false
+// }
+//
+// const userInfo = ({name, commentsQty}) => {
+//     if (!commentsQty) {
+//         return `User ${name} has no comments`
+//     }
+//     return `User ${name} has ${commentsQty} comments`
+// }
+//
+// console.log(userInfo(userProfile));
+
+// Умовні інструкції
+// if - виконується якщо умова правдиве
+// else - виконується якщо умова хибна
+// let value = 10;
+//
+// if (value >= 5) {
+//     value += 30
+// } else {
+//     value -= 30
+// }
+// console.log(value);
+
+// перевірка на наявність значень
+// const person = {
+//     age: 20
+// }
+// const checkName = function (object) {
+//     if (!object.name) {
+//         console.log(`Ім'я не вказано`)
+//     } else {
+//         console.log(object.name)
+//     }
+// }
+// checkName(person);
+
+// if else if - якщо умова 1 хибна - переходимо на умову 2, якщо умова 2 хибна - переходимо на else
+// const age = 19;
+//
+// if (age > 18) {
+//     console.log('is Adult')
+// } else if (age >= 12) {
+//     console.log('is Teenager')
+// } else {
+//     console.log('is Child')
+// }
+
+// if if if - якщо всі умови вірні, то будуть всі результати (Такий код більш читальний)
+// const age = 19;
+//
+// if (age >= 18) {
+//     console.log('is Adult')
+// }
+// if (age >= 12) {
+//     console.log('is Teenager') // або написати age >= 12 && age < 18 --- для того щоб вивести один результат
+// }
+// if (age < 12) {
+//     console.log('is Child')
+// }
+
+// Умови в функціях
+// const sumPositiveNumbers = (a,b) => {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return 'One of the argument is not a number'
+//     }
+//     if (a <=0 || b <= 0) {
+//         return 'Numbers are not positive'
+//     }
+//     return a + b
+// }
+//
+// console.log(sumPositiveNumbers(10, -10));
+
+// switch
+// const month = 1
+// switch (month) {
+//     case 12:
+//         console.log('December')
+//         break
+//     case 1:
+//         console.log('January')
+//         break
+//     case 2:
+//         console.log('February')
+//         break
+//     default:
+//         console.log('It is not a winter month')
+// }
 
 
 
