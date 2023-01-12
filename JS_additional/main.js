@@ -653,11 +653,120 @@
 //         console.log('It is not a winter month')
 // }
 
+// Тернарний оператор - якщо умова вірна, повертається результат Виразу 1, якщо хибне - результат Виразу 2
+// Синтаксис:
+// Умова
+//      ? Вираз 1
+//      : Вираз 2
+//
+// const value = 0;
+// value
+//     ? console.log('True')
+//     : console.log('False')
+//
+// const value1 = 11;
+// const value2 = 25;
+// value1 && value2
+//     ? console.log('True')
+//     : console.log('False')
+//
+// let value3 = 10
+// console.log(value3 >=0 ? value3: -value3);
+//
+// value3 = -5;
+// const result = value3 >= 0
+//     ? value3
+//     : -value3
+// console.log(result)
 
+// Цикл for - використовуємо для масивів (але не рекомендується, краще використовувати forEach та map)
+// for (let i =0; i< 5; i++) {
+//     console.log(i)
+// }
+//
+// const myArray = ['first','second','third'];
+//
+// for (let i = 0; i < myArray.length; i++) {
+//     let item = myArray[i];
+//     console.log(item)
+// }
+//
+//
+// //Краще forEach (можна також мати доступ до індексу елементу)
+// myArray.forEach((element,index) => {
+//     console.log(element,index)
+// })
 
+// Цикл while - виконується поки умова вірна (може виконуватися нескінченно, якщо є така умова, тому що умова
+// зазначена в середині циклу, а не за його межами - якщо прибрати і++, то цикл стане нескінченним)
+// let i = 0
+//
+// while (i < 5) {
+//     console.log(i)
+//     i++
+// }
 
+// Цикл do while - виконується якнайменше один раз, а далі якщо умова хибна - вийде з цикла
+// let i = 5;
+//
+// do {
+//     console.log(i)
+//     i++
+// } while (i < 5)
 
+// Цикл for in - виконується з кожним ключем об'єкта
+// const myObject = {
+//     name: 'Bogdan',
+//     age: 21,
+//     status: true
+// }
+// for (const key in myObject) {
+//     console.log(`${key}: ${myObject[key]}`)
+// }
 
+// forEach для об'єктів
+// const myObject = {
+//     name: 'Bogdan',
+//     age: 21,
+//     status: true
+// }
+//
+// console.log(Object.keys(myObject)); // за допомогою виклику метода keys, яка є методом змінної Object, можна отримати
+// // всі ключі об'єкта у вигляді масиву
+//
+// // а потім за допомогою forEach перебираємо масив
+// Object.keys(myObject).forEach(key => {
+//     console.log(key, myObject[key])
+// })
+//
+// // можна перебрати всі значення об'єкта
+// Object.values(myObject).forEach(value => {
+//     console.log(value)
+// })
+
+// for in для масивів - не рекомендується, краще forEach
+// const myArray = [true, 10, 'abc', null]
+//
+// for (const key in myArray) {
+//     console.log(myArray[key])
+// }
+
+// цикл for of (не для об'єктів)
+// const myString = 'Hello'
+// for (const element of myString) {
+//     console.log(element)
+// }
+//
+// const myArray = [true, 10, 'abc', null];
+//
+// for (const element of myArray) {
+//     console.log(element);
+// }
+//
+//краще forEach
+// myArray.forEach(element => {
+//     console.log(element)
+// })
 
 
 
