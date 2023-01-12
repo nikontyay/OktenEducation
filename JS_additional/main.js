@@ -768,6 +768,8 @@
 //     console.log(element)
 // })
 
+// Всі об'єкти можна конвертувати в масив за допомогою Object.keys or Object.values, а потім юзати метод forEach
+
 
 
 
