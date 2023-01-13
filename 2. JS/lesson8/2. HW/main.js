@@ -69,28 +69,8 @@
 //     -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 //     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
-//     -- changeYear (newValue) - змінює рік випуску на значення newValue
-//     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
-// function Cars (model,manufactor,year,maxspeed,volumeofengine) {
-//         this.model = model;
-//         this.manufactor = manufactor;
-//         this.year = year;
-//         this.maxspeed = maxspeed;
-//         this.volumeofengine = volumeofengine;
-//         this.drive = function () {
-//                 console.log(`їдемо зі швидкістю ${this.maxspeed} на годину`)
-//         }
-//         this.info = function () {
-//                 for (const item in this) {
-//                         if (typeof this[item] !== 'function') {
-//                                 console.log(`${item}: ${this[item]}`)
-//                         }
-//                 }
-//         }
-//         this.increaseMaxSpeed = function (newSpeed) {
-//                 return this.maxspeed = newSpeed;
-//         }
-//         this.changeYear = function (newValueOfYear) {
+//     -- ch/*angeYear (newValue) - змінює рік випуску на значення newValue
+//     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набороfgvgh
 //                 return this.year = newValueOfYear;
 //         }
 //         this.addDriver = function (nameOfDriver) {
