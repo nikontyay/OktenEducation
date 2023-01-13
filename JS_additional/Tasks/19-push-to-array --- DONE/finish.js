@@ -6,3 +6,7 @@
  *
  * 3. Выведите в консоль длину результирующего массива
  */
+
+let myArr = ['abc',10,true];
+myArr.push(false);
+console.log(myArr.length);
