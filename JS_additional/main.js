@@ -800,7 +800,7 @@
 // console.log(firstComment.hasOwnProperty('votesQty')); //true - наслідується від firstComment
 // console.log(firstComment.hasOwnProperty('upvote')); //false - upvote наслідується від класу Comment
 
-// static - не наслідується екземпляром класу, але доступні як методи самого Класу
+// static методи - не наслідуються екземпляром класу, але доступні як методи самого Класу
 // class Comment {
 //     constructor(text) {
 //         this.text = text
@@ -831,7 +831,96 @@
 // console.log(myArray)
 // console.log(myArray.sum());
 
-
+//THIS THIS THIS THIS THIS
+//Trying to summarize 'this' after watching this video for at least 5th time:
+//
+// For fns inside Objects: 'this' refers to the object calling the function.
+// For fns not called by objects - Eg call back functions -    'this' refers to the global object.
+// For fns defined using arrow functions - 'this' simple refers to the object that is executing the arrow function -
+// Irrespective of object's scope. Meaning:  if the arrow function is called from a global scope? 'this' will refer
+// to the global object. If the arrow function is called with in a function which belongs to an object?'this'
+// will refer to the calling function's scope and in this case the object itself.
+//
+//
+// Якщо функція це метод об'єкта, то this дивиться на об'єкт (method -> obj)
+// const video = {
+//     title: 'OKTEN',
+//     play() {
+//         console.log(this)
+//     }
+// }
+//
+// video.play()
+//
+//
+// Якщо функція не всередині об'єкта, то this дивиться на window (function -> global (window))
+// let playVideo = function () {
+//     console.log(this)
+// }
+// playVideo()
+//
+//
+// Якщо функція всередині конструктора, то this дивиться на елемент конструктора
+// function Constructor
+// function Video(title) {
+//     this.title = title;
+//     console.log(this)
+// }
+//
+// const v = new Video('Education');
+//
+//
+// Тут this дивиться на Window, бо this всередині callback функції (це не метод video2)
+// const video2 = {
+//     title: 'OKTEN',
+//     tags: ['a','b','c'],
+//     showTags() {
+//         this.tags.forEach(function (tag){
+//             console.log(this, tag) // Тут this дивиться на Window, бо this всередині callback функції (це не метод video2)
+//         })
+//     }
+// }
+// video2.showTags();
+//
+//
+// для вирішення цієї проблеми, додамо this як другий аргумент forEach, і this всередині функції запрацює (працює не зі всіма методами)
+// const video3 = {
+//     title: 'OKTEN',
+//     tags: ['a','b','c'],
+//     showTags() {
+//         this.tags.forEach(function (tag){
+//             console.log(this.title, tag)
+//         },this)
+//     }
+// }
+// video3.showTags()
+//
+//
+// якщо функція додана в об'єкт, то this буду дивитися на сам об'єкт
+// function context() {
+//     return this
+// }
+//
+// const object = {
+//     method: context
+// }
+// console.log(object.method());
+//
+//
+// в вкладених об'єктах this буде дивитися на об'єкт в який він вкладенний
+// const object2 = {
+//     method: context,
+//     inner: {
+//         someFunction: function () {
+//             return this
+//         }
+//     }
+// }
+//
+//
+// стрілкова функція не має this (дивиться на window)
+// const someFunc = () => this;
+// console.log(someFunc());
 
 
 
