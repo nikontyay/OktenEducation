@@ -818,7 +818,7 @@
 // const finalComment = Comment.mergeComments('firstComment','secondComment');
 //
 // const firstComment = new Comment('hello');
-// console.log(firstComment);ж
+// console.log(firstComment);
 
 // extends
 // class NumbersArray extends Array {
