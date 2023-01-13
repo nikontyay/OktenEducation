@@ -770,6 +770,68 @@
 
 // Всі об'єкти можна конвертувати в масив за допомогою Object.keys or Object.values, а потім юзати метод forEach
 
+// Класи дозволяють створювати прототипи для об'єктів
+// Кожен екземпляр може мати свої власні властивості та методи. Екземпляр наслідує властивості й методи прототипів
+// this вказує на екземпляр класу
+// class Comment {
+//     constructor(text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
+//
+//     upvote() {
+//         this.votesQty +=1
+//     }
+// }
+//
+// const firstComment = new Comment('You are welcome');
+// console.log(firstComment);
+//
+
+// instanceof - перевірка приналежності екземплярів класу
+// console.log(firstComment instanceof Comment); // true - firstComment  є екземпляром класу Comment
+// console.log(firstComment instanceof Object); // true - firstComment  є екземпляром батьківського класу Object
+//
+// firstComment.upvote()
+// console.log(firstComment.votesQty);
+
+// перевірка приналежності властивостей екземпляра об'єкта
+// console.log(firstComment.hasOwnProperty('text')); //true
+// console.log(firstComment.hasOwnProperty('votesQty')); //true - наслідується від firstComment
+// console.log(firstComment.hasOwnProperty('upvote')); //false - upvote наслідується від класу Comment
+
+// static - не наслідується екземпляром класу, але доступні як методи самого Класу
+// class Comment {
+//     constructor(text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
+//
+//     upvote() {
+//         this.votesQty +=1
+//     }
+//     static mergeComments(first, second) {
+//         return `${first} ${second}`
+//     }
+// }
+//
+// const finalComment = Comment.mergeComments('firstComment','secondComment');
+//
+// const firstComment = new Comment('hello');
+// console.log(firstComment);
+
+// extends
+// class NumbersArray extends Array {
+//     sum() {
+//         return this.reduce((el, acc) => acc += el, 0)
+//     }
+// }
+//
+// const myArray = new NumbersArray(10,20,30);
+// console.log(myArray)
+// console.log(myArray.sum());
+
+
 
 
 
